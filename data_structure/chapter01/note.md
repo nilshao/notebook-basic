@@ -1,10 +1,10 @@
 # 第一章 序论
 
-![知识结构](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/知识结构.png)
+![知识结构](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter01/images/知识结构.png)
 
 ## 基本概念
 
-![数据结构绪论](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/数据结构绪论.png)
+![数据结构绪论](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter01/images/数据结构绪论.png)
 
 ### 数据结构的三要素：
 
@@ -16,11 +16,11 @@
 
 1. 集合：各个元素同属一个结构，没有其他关系
 2. 线性结构：数据元素之间是一对一的关系。 除了第一个元素,所有元素都有唯一**前驱**，除了最后一个元素,所有元素都有唯一**后继**
-![线性结构](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/线性结构.png)
+![线性结构](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter01/images/线性结构.png)
 3. 树形结构：数据元素之间是一对多的关系。
-![树形结构](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/树形结构.png)
+![树形结构](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter01/images/树形结构.png)
 4. 图结构：数据元素之间是多对多的关系
-![图结构](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/图结构.png)
+![图结构](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter01/images/图结构.png)
 
 ### 数据结构的物理结构
 
@@ -92,7 +92,7 @@
 3. 乘法规则：多项相乘，都保留
 4. 只需要考虑最深层循环的循环次数与n的关系。
 
-![算法时间复杂度](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/算法时间复杂度.png)
+![算法时间复杂度](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter01/images/算法时间复杂度.png)
 
 三种时间复杂度：
 
@@ -105,8 +105,3 @@
 ### 空间复杂度：
 
 程序运行时的内存需求：S(n) = O(1)
-
-
-
-
-![](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter01/images/.png)

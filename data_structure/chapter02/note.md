@@ -27,14 +27,14 @@ L=(a1,a2,a3...ai,ai+1,...an)
 
 回忆：
 
-![线性表存储物理结构](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter02/images/线性表存储物理结构.png)
+![线性表存储物理结构](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/线性表存储物理结构.png)
 
 ### 顺序表定义
 
 **顺序表**。用顺序存储的方式实现线性表 
 **顺序存储**。把逻辑上相邻的元素存储在物理 位置上也相邻的存储单元中,元素之间的关系由存储单元的邻接关系来体现
 
-![顺序表定义](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter02/images/顺序表定义.png)
+![顺序表定义](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/顺序表定义.png)
 
 **数据元素大小**。C语言：sizeof(ele)
 
@@ -46,7 +46,7 @@ L=(a1,a2,a3...ai,ai+1,...an)
 
 ### 顺序表的实现————动态分配
 
-![动态分配](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter02/images/动态分配.png)  
+![动态分配](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/动态分配.png)  
 
 malloc函数的参数指明了要分配多大的连续内存空间。
 
@@ -54,7 +54,7 @@ C++：new，delete
 
 可以增加动态数组的长度
 
-![动态分配增加数组长度](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter02/images/动态分配增加数组长度.png) 
+![动态分配增加数组长度](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/动态分配增加数组长度.png) 
 
 ### 顺序表特点
 
@@ -63,6 +63,13 @@ C++：new，delete
 3. 拓展容量不方便(即便采用动态分配的方式实现,拓展长度的时间复杂度也比较高) 
 4. 插入、删除操作不方便,需要移动大量元素
    
+### 顺序表的基本操作————插入
+
+将第i各元素以及之后的元素向后移动，在位置i处放入e，长度+1。
+
+时间复杂度：
+
+空间复杂度：
 
 
 
@@ -71,4 +78,4 @@ C++：new，delete
 
 
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/data_structure/chapter02/images/.png)
+![](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/.png)
