@@ -34,7 +34,7 @@
 
 2. 资源子网：应用层，表示层，会话层，实现资源共享/数据处理。
 
-![计算机网络的功能组成](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/计算机网络的功能组成.jpeg)
+![计算机网络的功能组成](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/计算机网络的功能组成.jpeg)
 
 ### 分类
 
@@ -162,7 +162,7 @@ RTT越大，在**收到确认之前**可以发送的数据越多。
 ### 分层结构：
 
 
-![分层结构1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/分层结构1.jpeg)
+![分层结构1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/分层结构1.jpeg)
 
 1. 实体：第n层中的活动元素称为n层实体，同一层实体叫做对等实体
 
@@ -179,7 +179,7 @@ RTT越大，在**收到确认之前**可以发送的数据越多。
 
     PDU 协议数据单元：对等层次之间传送的数据单位。
 
-![分层结构2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/分层结构2.jpeg)
+![分层结构2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/分层结构2.jpeg)
 
 ### 概念总结
 
@@ -221,9 +221,9 @@ OSI模型层之间有很多重复功能
 
 ### 用OSI参考模型解释通信过程
 
-![osi参考模型解释通信过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程.PNG)
+![osi参考模型解释通信过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程.PNG)
 
-![osi参考模型解释通信过程2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程2.PNG)
+![osi参考模型解释通信过程2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程2.PNG)
 
 ### **应用层**
 
@@ -343,7 +343,7 @@ OSI模型层之间有很多重复功能
 
 ### TCP/IP模型
 
-![osi与tcpip模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/osi与tcpip模型.JPG)
+![osi与tcpip模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/osi与tcpip模型.JPG)
 
 相同点：
 
@@ -389,7 +389,7 @@ OSI模型层之间有很多重复功能
 
 ### 五层参考模型的数据封装与解封装
 
-![五层参考模型的数据封装与解封装](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/五层参考模型的数据封装与解封装.jpeg)# 第二章 物理层
+![五层参考模型的数据封装与解封装](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/五层参考模型的数据封装与解封装.jpeg)# 第二章 物理层
 
 ## abstract
 
@@ -750,7 +750,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 + 四种方法：字符计数法，字符（字节）填充法，零比特填充法，违规编码法
 
-![封装成帧](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/封装成帧.JPG)
+![封装成帧](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/封装成帧.JPG)
 
 ## 透明传输
 
@@ -764,7 +764,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 帧首部用一个计数字段（第一个字节，八位）来标明帧内字符数。
 
-![字符计数法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/字符计数法.JPG)
+![字符计数法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/字符计数法.JPG)
 
 问题：万一这个计数字段也有问题
 
@@ -772,7 +772,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 帧的三个部分：
 
-![字符填充法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/字符填充法.JPG)
+![字符填充法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/字符填充法.JPG)
 
 
 + SOH（start of header）00000001
@@ -784,7 +784,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 应用：传送文件是由文本文件组成时（文本文件字符都是从键盘上输入的，可用ascii码表达）。当传送的帧是由非ascii码的文本文件组成时（程序/图像等）就不行。可能在
 信息中有和eot字段相同的组合，这时候就要采用字符填充的方法实现透明传输。
 
-![字符填充法_发送接收](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/字符填充法_发送接收.JPG)
+![字符填充法_发送接收](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/字符填充法_发送接收.JPG)
 
 
 在与EOT相同的字段前加**转义字符**ESC作为字节填充，与转义字符ESC相同的前面也要添加
@@ -856,9 +856,9 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 最终发送的数据是要发送的数据+**帧检验数列**FCS
 
-![CRC循环冗余码](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/CRC循环冗余码.png)
+![CRC循环冗余码](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/CRC循环冗余码.png)
 
-![crc接收端检错](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/crc接收端检错.JPG)
+![crc接收端检错](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/crc接收端检错.JPG)
 
 
 总结：在数据链路层仅仅使用循环冗余检验CRC差错检测技术，只能做到对帧的无差错接收，即“凡是接收端数据链路层接受的帧，
@@ -878,7 +878,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 确定校验码位数r -> 确定校验码和数据的位置 -> 求出校验码的值 -> 捡错纠错
 
-![海明码求校验码](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/海明码求校验码.JPG)
+![海明码求校验码](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/海明码求校验码.JPG)
 
 1. 确定校验码位数r
 
@@ -961,7 +961,7 @@ SR：发送窗口大小 > 1，接收窗口大小 > 1
 
 ### 无差错情况
 
-![停等协议无差错](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议无差错.JPG)
+![停等协议无差错](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议无差错.JPG)
 
 ### 有差错情况
 
@@ -970,22 +970,22 @@ ACK：确认帧（1bit的1和0编号就够）
 
 1. 数据帧丢失或检测到帧出错
 
-![数据帧丢失或检测到帧出错](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/数据帧丢失或检测到帧出错.png)
+![数据帧丢失或检测到帧出错](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/数据帧丢失或检测到帧出错.png)
 
 RTT：往返传播时延round trip time
 
 2. ACK丢失
 
-![停等协议有差错ack丢失](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议有差错ack丢失.JPG)
+![停等协议有差错ack丢失](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议有差错ack丢失.JPG)
 
 3. ACK迟到
 
-![ACK迟到](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/ACK迟到.png)
+![ACK迟到](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/ACK迟到.png)
 
 
 ### 性能分析
 
-![停等协议性能分析](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议性能分析.png)
+![停等协议性能分析](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议性能分析.png)
 
 
 简单，信道利用率太低，但大部分时间都在路上
@@ -1000,13 +1000,13 @@ T内发送L比特数据；发送周期T：从开始发送数据，到收到第�
 
 **信道吞吐率** = 信道利用率*发送方的发送速率
 
-![信道利用率信道吞吐率](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/信道利用率信道吞吐率.JPG)
+![信道利用率信道吞吐率](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/信道利用率信道吞吐率.JPG)
 
 ### 流水线技术
 
 增加缓存空间
 
-![停等协议的弊端](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议的弊端.JPG)
+![停等协议的弊端](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议的弊端.JPG)
 
 
 ## 滑动窗口：选择重传协议SR
@@ -1017,7 +1017,7 @@ SR：设置单个确认，同时加大接收窗口，设置接收缓存，缓存
 
 ### 选择重传协议中的滑动窗口
 
-![选择重传中的滑动窗口](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/选择重传中的滑动窗口.JPG)
+![选择重传中的滑动窗口](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/选择重传中的滑动窗口.JPG)
 
 （注意上下例子是分开的，不是同一个时序中）
 
@@ -1044,7 +1044,7 @@ SR接收方将确认一个正确接收的帧而**不管其是否按序**。失�
 
 ### 运行中的SR
 
-![运行中的SR](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/运行中的SR.JPG)
+![运行中的SR](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/运行中的SR.JPG)
 
 
 ### 滑动窗口长度
@@ -1065,7 +1065,7 @@ SR接收方将确认一个正确接收的帧而**不管其是否按序**。失�
 
 ### 滑动窗口
 
-![后退n帧接收窗口](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/后退n帧接收窗口.JPG)
+![后退n帧接收窗口](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/后退n帧接收窗口.JPG)
 
 + 发送端要拷贝副本，万一帧错误or丢失
 
@@ -1096,7 +1096,7 @@ gbn协议中，对n号帧采用累计确认方式，表明接收方已经收到n
 
 ### 运行中的GBN
 
-![运行中的GBN](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/运行中的GBN.JPG)
+![运行中的GBN](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/运行中的GBN.JPG)
 
 
 ### 滑动窗口长度
@@ -1143,7 +1143,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 静态划分信道，动态分配信道
 
-![介质访问控制](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/介质访问控制.JPG)
+![介质访问控制](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/介质访问控制.JPG)
 
 ### 什么是信道划分介质访问控制
 
@@ -1152,7 +1152,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 信道划分介质访问控制：将使用介质的每个设备与来自同一信道上的其他设备的通信隔离开，
 把**时域**和**频域**资源合理地分配给网络上的设备。
 
-![信道划分介质访问控制](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/信道划分介质访问控制.JPG)
+![信道划分介质访问控制](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/信道划分介质访问控制.JPG)
 
 多路复用技术：把多个信号组合在一条物理信道上进行传输，使得多个计算机或终端设备共享信道资源，提高信道利用率。
 
@@ -1165,24 +1165,24 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 + 频分复用：不同用户在同样的时间占用不同的带宽。充分利用传输介质带宽，系统效率较高；由于技术比较成熟，实现也比较容易。
 
-![频分多路复用fdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/频分多路复用fdm.JPG)
+![频分多路复用fdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/频分多路复用fdm.JPG)
 
 
 + 时分复用：一个周期中各个用户占有一个*固定序号*的时隙,用户轮流占用信道。
 
-![时分多路复用tdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/时分多路复用tdm.JPG)
+![时分多路复用tdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/时分多路复用tdm.JPG)
 
 + 改进的时分复用————统计时分复用STDM：**集中器**按需动态分配时隙。
 
-![统计时分复用stdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/统计时分复用stdm.JPG)
+![统计时分复用stdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/统计时分复用stdm.JPG)
 
 + 波分多路复用：**光**的频分多路复用。
 
-![波分多路复用wdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/波分多路复用wdm.JPG)
+![波分多路复用wdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/波分多路复用wdm.JPG)
 
 + 码分多路复用：码分多址（CDMA）是码分复用的一种方式。m一般为64或128。这里的8是方便讲解（自己再查一下）
 
-![码分多路复用cdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/码分多路复用cdm.JPG)
+![码分多路复用cdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/码分多路复用cdm.JPG)
 
 
 ## 轮询访问介质访问控制
@@ -1208,7 +1208,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 令牌：一个特殊格式的mac控制帧，不含任何信息。控制信道的使用，确保同一时刻只有一个结点独占信道。令牌环网无碰撞
 
-![令牌传递协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/令牌传递协议.JPG)
+![令牌传递协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/令牌传递协议.JPG)
 
 每个节点都可以在一定时间内（令牌持有时间）获得发送数据的权利，不是无限制地持有令牌
 
@@ -1224,7 +1224,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 思想：不监听信道，不按时间槽发送，*随机*重发。（想发就发）T0:发送时间，包括传输时间和传播时间。
 
-![纯aloha协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/纯aloha协议.jpeg)
+![纯aloha协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/纯aloha协议.jpeg)
 
 冲突如何检测：如果发生冲突，接收方就会检测出差错，然后不予确认，发送方在一定时间内收不到就判断发生了冲突。
 
@@ -1234,7 +1234,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 思想：把时间分成若干个相同的时间片，所有用户在时间片开始时刻同步接入网络信道，若发生冲突，则必须等到下一个时间片开始时刻再发送。（控制了想发就发的随意性）
 
-![时隙aloha协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/时隙aloha协议.jpeg)
+![时隙aloha协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/时隙aloha协议.jpeg)
 
 ### 总结
 
@@ -1293,7 +1293,7 @@ MA：**多点接入**，即多个计算机以多点接入的方式连接在同�
 
 #### 对比
 
-![CSMA对比](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/CSMA对比.jpeg)
+![CSMA对比](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/CSMA对比.jpeg)
 
 ### 动态分配信道 CSMA-CD协议 (先听再说，边听边说)
 
@@ -1309,11 +1309,11 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 #### 传播时延对载波监听的影响
 
-![传播时延对载波监听的影响](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响.JPG)
+![传播时延对载波监听的影响](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响.JPG)
 
 冲突，碰撞
 
-![传播时延对载波监听的影响过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响过程.jpeg)
+![传播时延对载波监听的影响过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响过程.jpeg)
 
 碰撞后信息发生叠加，可以检测出来。
 
@@ -1331,7 +1331,7 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 4. 当重传次数达到16次仍不能成功时，说明网络太拥挤，认为此帧永远无法正确发出，抛弃此帧并向高层报告出错。重传：截断二进制指数规避算法。
 
-![截断二进制指数规避算法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/截断二进制指数规避算法.JPG)
+![截断二进制指数规避算法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/截断二进制指数规避算法.JPG)
 
 #### 总结
 
@@ -1339,7 +1339,7 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 #### 例题
 
-![截断二进制指数规避习题](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/截断二进制指数规避习题.JPG)
+![截断二进制指数规避习题](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/截断二进制指数规避习题.JPG)
 
 #### 最小帧长
 
@@ -1347,7 +1347,7 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 真的传输时延至少要两倍于信号在总线中的传播时延。（公式图片——）但最小64B，不足则填充
 
-![帧传输最小帧长](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/帧传输最小帧长.JPG)
+![帧传输最小帧长](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/帧传输最小帧长.JPG)
 
 ### 动态分配信道 CSMA-CA协议
 
@@ -1387,7 +1387,7 @@ CA：无线局域网：
 
 #### csma/cd 与 csma/ca总结
 
-![csma/cd和csma/ca总结](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/csmacd和csmaca总结.JPG)
+![csma/cd和csma/ca总结](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/csmacd和csmaca总结.JPG)
 
 
 ### 局域网
@@ -1410,7 +1410,7 @@ CA：无线局域网：
 
 星型，总线型，环形，树形
 
-![局域网拓扑结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/局域网拓扑结构.JPG)
+![局域网拓扑结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/局域网拓扑结构.JPG)
 
 
 #### 局域网介质访问控制方法
@@ -1439,7 +1439,7 @@ CA：无线局域网：
 
 IEEE802标准所描述的局域网参考模型对应OSI参考模型的数据链路层和物理层，它将数据链路层划分为逻辑链路层LLC，和介质访问控制MAC子层。（图片
 
-![mac子层和llc子层](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/mac子层和llc子层.JPG)
+![mac子层和llc子层](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/mac子层和llc子层.JPG)
 
 + LLC负责识别网络层协议，然后对他们进行封装。LLC报头告诉数据链路层一旦帧被接收时，应当对数据包如何处理。为网络层提供服务：无确认无连接、面向连接、带确认无连接、高速传送。
 
@@ -1469,11 +1469,11 @@ IEEE802标准所描述的局域网参考模型对应OSI参考模型的数据链�
 
 总线型发展到星型
 
-![以太网传输介质与拓扑结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/以太网传输介质与拓扑结构.JPG)
+![以太网传输介质与拓扑结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/以太网传输介质与拓扑结构.JPG)
 
 #### 10base-t以太网
 
-![10base-t以太网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/10base-t以太网.jpeg)
+![10base-t以太网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/10base-t以太网.jpeg)
 
 #### 适配器和mac地址
 
@@ -1487,13 +1487,13 @@ MAC地址：每个适配器有一个全球唯一的48位二进制地址，前24�
 
 最常用的mac帧是以太网v2的格式。(!!!再自己看看)
 
-![以太网mac帧](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/以太网mac帧.JPG)
+![以太网mac帧](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/以太网mac帧.JPG)
 
 注：数据长度范围：46-1500: 1500是mtu，最大数据传送单元，最小帧长64字节，之前有了18字节了，为了保证MAC帧是有效帧。
 
 #### 高速以太网
 
-![高速以太网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/高速以太网.JPG)
+![高速以太网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/高速以太网.JPG)
 
 ### 无线局域网WLAN
 
@@ -1503,17 +1503,17 @@ WIFI属于WLAN
 
 #### 802.11的mac帧头格式
 
-![80211的mac帧头格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/80211的mac帧头格式.JPG)
+![80211的mac帧头格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/80211的mac帧头格式.JPG)
 
 #### 无线局域网分类
 
 1. 有固定基础设施的无线局域网
 
-![有固定基础设施的无线局域网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/有固定基础设施的无线局域网.jpeg)
+![有固定基础设施的无线局域网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/有固定基础设施的无线局域网.jpeg)
 
 2. 无固定基础设施的无线局域网的自组织网络
 
-![无固定基础设施的无线局域网的自组织网络](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/无固定基础设施的无线局域网的自组织网络.jpeg)
+![无固定基础设施的无线局域网的自组织网络](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/无固定基础设施的无线局域网的自组织网络.jpeg)
 
 ## PPP协议，HDLC协议
 
@@ -1521,7 +1521,7 @@ WIFI属于WLAN
 
 广域网的通信子网使用**分组交换技术**，广域网的通信子网可以利用公用分组交换网，卫星通信网和无线分组交换网，将分布在各个地区的局域网或计算机系统互联起来，达到资源共享的目的。因特网是世界范围内最大的广域网。
 
-![广域网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/广域网.jpeg)
+![广域网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/广域网.jpeg)
 
 ### PPP协议
 
@@ -1561,13 +1561,13 @@ WIFI属于WLAN
 
 #### 状态图 
 
-![状态图](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/状态图.jpeg)
+![状态图](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/状态图.jpeg)
 
 #### PPP协议的帧格式
 
-![ppp协议的帧格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/PPP协议的帧格式.JPG)
+![ppp协议的帧格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/PPP协议的帧格式.JPG)
 
-![ppp协议的帧格式2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/PPP协议的帧格式2.JPG)
+![ppp协议的帧格式2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/PPP协议的帧格式2.JPG)
 
 ### HDLC协议
 
@@ -1579,17 +1579,17 @@ WIFI属于WLAN
 
 主战，从站，复合站
 
-![HDLC的站](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/HDLC的站.JPG)
+![HDLC的站](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/HDLC的站.JPG)
 
 #### HDLC的帧格式
 
-![hdlc的帧格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/hdlc的帧格式.JPG)
+![hdlc的帧格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/hdlc的帧格式.JPG)
 
 ### PPP协议和HDLC协议
 
 HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以实现差错检测，但不纠正差错。
 
-![ppp协议和hdlc协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/ppp协议和hdlc协议.JPG)
+![ppp协议和hdlc协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/ppp协议和hdlc协议.JPG)
 
 ## 链路层设备
 
@@ -1597,13 +1597,13 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 光纤（光纤调制器，光纤解调器）。集线器（集线器下的计算机们构成冲突域，只能同时有一个设备发送；主干集线器）
 
-![物理层扩展以太网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/物理层扩展以太网.JPG)
+![物理层扩展以太网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/物理层扩展以太网.JPG)
 
 ### 链路层扩展以太网
 
 网桥或称交换机（!!!在看看一次）
 
-![网桥交换机](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/网桥交换机.JPG)
+![网桥交换机](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/网桥交换机.JPG)
 
 把冲突域分隔开
 
@@ -1613,7 +1613,7 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 透明 是指以太网上的站点并不知道所发送的帧将经过哪几个网桥，是一种即插即用设备（自学习）
 
-![透明网桥转发表](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/透明网桥转发表.jpeg)
+![透明网桥转发表](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/透明网桥转发表.jpeg)
 
 
 
@@ -1627,7 +1627,7 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 可以独占传输媒体带宽
 
-![多接口网桥](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/多接口网桥.jpeg)
+![多接口网桥](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/多接口网桥.jpeg)
 
 ### 以太网交换机的两种交换方式
 
@@ -1637,11 +1637,11 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 ### 冲突域和广播域
 
-![冲突域和广播域](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/冲突域和广播域.JPG)
+![冲突域和广播域](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/冲突域和广播域.JPG)
 
 链路域设备（交换机） 每个接口分割一个冲突域。
 
-![冲突域和广播域练习](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/冲突域和广播域练习.jpeg)
+![冲突域和广播域练习](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/冲突域和广播域练习.jpeg)
 
 4个冲突域和1个广播域
 
@@ -1729,12 +1729,12 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 + 报文交换和分组交换比较：
 
-![报文交换分组交换比较](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/报文交换分组交换比较.JPG)
+![报文交换分组交换比较](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/报文交换分组交换比较.JPG)
 
 
 + 三种数据交换方式比较总结
 
-    ![三种数据报交换比较](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/三种数据报交换比较.JPG)
+    ![三种数据报交换比较](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/三种数据报交换比较.JPG)
 
 
     1. 报文交换和分组交换都采用存储转发
@@ -1786,7 +1786,7 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 ### 数据报和虚电路比较
 
-![数据报和虚电路](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/数据报和虚电路.JPG)
+![数据报和虚电路](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/数据报和虚电路.JPG)
 
 ## IP数据报格式
 
@@ -1794,15 +1794,15 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 TCP/IP协议栈的位置（橙色）
 
-![TCP/IP协议栈](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/tcpip协议栈.JPG)
+![TCP/IP协议栈](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/tcpip协议栈.JPG)
 
 数据部分由运输层
 
-![IPv4数据报格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/ipv4数据报格式.JPG)
+![IPv4数据报格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/ipv4数据报格式.JPG)
 
 固定部分为20字节固定长度
 
-![IP数据报格式固定格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/IP数据报格式固定格式.JPG)
+![IP数据报格式固定格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/IP数据报格式固定格式.JPG)
 
 1. 版本：IPv4 or IPv6?
 
@@ -1816,7 +1816,7 @@ TCP/IP协议栈的位置（橙色）
 
 6. 协议：数据部分的协议
 
-![协议名字段值](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/协议名字段值.JPG)
+![协议名字段值](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/协议名字段值.JPG)
 
 7. 首部检验和：只检验首部，注意经过每个路由器都要更新一下，因为生存时间，片偏移会发生变化
 
@@ -1832,7 +1832,7 @@ TCP/IP协议栈的位置（橙色）
 
 以太网的MTU是1500字节
 
-![最大传送单元MTU](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/最大传送单元MTU.JPG)
+![最大传送单元MTU](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/最大传送单元MTU.JPG)
 
 如果所传诵的数据报长度超过某链路的MTU值怎么办？————分片
 
@@ -2025,7 +2025,7 @@ IPv6改进了首部格式，加快路由器处理速度，转发数据报速度
 
 固定40B首部：
 
-![IPv6数据报格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/ipv6数据报格式.JPG)
+![IPv6数据报格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/ipv6数据报格式.JPG)
 
 + 版本：指明了协议版本，总是6
 
@@ -2089,7 +2089,7 @@ IPv6改进了首部格式，加快路由器处理速度，转发数据报速度
 
 ## 路由算法以及路由协议
 
-![路由算法1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/路由算法1.JPG)
+![路由算法1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/路由算法1.JPG)
 
 路由表/转发表中的表项是由那里得到的呢？路由算法
 
@@ -2128,19 +2128,19 @@ IPv6改进了首部格式，加快路由器处理速度，转发数据报速度
     自治系统AS：（图片补文字
 
 
-![AS1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS1.JPG)
+![AS1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS1.JPG)
 
 
-![AS2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS2.JPG)
+![AS2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS2.JPG)
 
-![AS3](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS3.JPG)
+![AS3](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS3.JPG)
 
 
 ## RIP协议和距离向量算法
 
 回顾：
 
-![AS2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS2.jpeg)
+![AS2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS2.jpeg)
 
 RIP协议是一种分布式的，基于距离向量的路由选择协议，是因特网的协议标准，最大优点是简单。
 
@@ -2149,7 +2149,7 @@ RIP协议要求网络中**每一个路由器**都维护从它自己到其他**�
 例子：R2的路由表
 
 
-![R2的路由表](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/R2的路由表.jpeg)
+![R2的路由表](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/R2的路由表.jpeg)
 
 距离通常指“跳数”，即从源端口到目的端口所经过的路由器个数，经过一个路由器跳数+1，特别的，从一路由器到直接连接的网络距离为1。RIP允许一条路由最多只能包含15个路由器，因此距离为**16表示网络不可达**。
 
@@ -2185,12 +2185,12 @@ RIP协议要求网络中**每一个路由器**都维护从它自己到其他**�
 
 图片，补文字
 
-![距离向量算法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/距离向量算法.jpeg)
+![距离向量算法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/距离向量算法.jpeg)
 
 
 RIP协议报文格式
 
-![RIP协议报文格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/RIP协议报文格式.jpeg)
+![RIP协议报文格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/RIP协议报文格式.jpeg)
 
 RIP是应用层协议，使用UDP传送数据
 
@@ -2220,19 +2220,19 @@ OSPF最主要特征是使用分布式的链路状态协议
 
 （补一下文字
 
-![链路状态路由算法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/链路状态路由算法.jpeg)
+![链路状态路由算法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/链路状态路由算法.jpeg)
 
 7. 使用Dijkstra根据自己的链路状态数据库构造到其他节点间的最短路径。
 
 ### OSPF的区域
 
-![OSPF的区域](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/OSPF的区域.JPG)
+![OSPF的区域](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/OSPF的区域.JPG)
 
 ### OSPF分组
 
 OSPF分组用IP数据报传送，RIP是用UDP
 
-![OSPF分组](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/OSPF分组.JPG)
+![OSPF分组](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/OSPF分组.JPG)
 
 ### 其他特点
 
@@ -2247,7 +2247,7 @@ OSPF分组用IP数据报传送，RIP是用UDP
 
 问题：
 
-![BGP结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP结构.jpeg)
+![BGP结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP结构.jpeg)
 
 
 + 和谁交换？与其他的AS的邻站BGP发言人交换信息。
@@ -2266,16 +2266,16 @@ AS：自治系统
 
 BGP发言人交换路径向量：
 
-![BGP协议交换信息的过程1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程1.JPG)
+![BGP协议交换信息的过程1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程1.JPG)
 
-![BGP协议交换信息的过程2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程2.JPG)
+![BGP协议交换信息的过程2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程2.JPG)
 
 
 ### BGP协议报文格式
 
 BGP是一个应用层协议
 
-![BGP协议报文格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP协议报文格式.JPG)
+![BGP协议报文格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP协议报文格式.JPG)
 
 ### BGP协议特点
 
@@ -2299,7 +2299,7 @@ BGP是一个应用层协议
 
 3. BGP是一个外部网关协议，在不同的自治系统之间交换路由信息，由于网络环境复杂，需要保证可靠传输，所以采用TCP
 
-![三种路由协议比较](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/三种路由协议比较.JPG)
+![三种路由协议比较](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/三种路由协议比较.JPG)
 
 ## IP组播
 
@@ -2311,7 +2311,7 @@ IP数据报的三种传输方式：单播，广播，组播（多播）
 
 * 组播（多播）：点对多点的传播方式
 
-![组播多播](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/组播多播.jpeg)
+![组播多播](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/组播多播.jpeg)
 
 
 单播，组播示意图
@@ -2334,18 +2334,18 @@ IP组播地址让源设备能够将分组发送给一组设备，
 
 ### 移动IP概念
 
-![移动IP概念](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/移动IP概念.jpeg)
+![移动IP概念](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/移动IP概念.jpeg)
 
 
 ### 移动IP通信过程
 
-![移动IP通信过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/移动IP通信过程.jpeg)
+![移动IP通信过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/移动IP通信过程.jpeg)
 
 3. 外部代理拆封数据报并发给A
 
 A移动到了下一个网络
 
-![移动IP通信过程2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/移动IP通信过程2.jpeg)
+![移动IP通信过程2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/移动IP通信过程2.jpeg)
 
 ## 网络层设备
 
@@ -2353,7 +2353,7 @@ A移动到了下一个网络
 
 **路由器结构：**
 
-![路由器结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/路由器结构.jpeg)
+![路由器结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/路由器结构.jpeg)
 
 **路由选择：** 根据所选定的路由选择协议构造出路由表，同时经常或定期的与相邻路由器交换路由信息而不断的更新和维护路由表。
 
@@ -2361,11 +2361,11 @@ A移动到了下一个网络
 
 输入端口对线路上收到分组的处理
 
-![输入端口对线路上收到分组的处理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/输入端口对线路上收到分组的处理.jpeg)
+![输入端口对线路上收到分组的处理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/输入端口对线路上收到分组的处理.jpeg)
 
 输出端口对线路上收到分组的处理
 
-![输出端口对线路上收到分组的处理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/输出端口对线路上收到分组的处理.jpeg)
+![输出端口对线路上收到分组的处理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/输出端口对线路上收到分组的处理.jpeg)
 
 若路由器处理分组的速率赶不上分组进入队列的速率，则队列的存储空间必定减少到零，这就使后面再进入队列的分组由于没有存储空间而只能被丢弃
 
@@ -2375,7 +2375,7 @@ A移动到了下一个网络
 ### 三层设备的区别
 
 
-![三层设备的区别](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/三层设备的区别.jpeg)
+![三层设备的区别](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/三层设备的区别.jpeg)
 
 ### 路由表和路由转发
 
@@ -2385,7 +2385,7 @@ A移动到了下一个网络
 
 路由转发是
 
-![路由表和路由转发](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/路由表和路由转发.jpeg)
+![路由表和路由转发](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/路由表和路由转发.jpeg)
 
 
 
@@ -2408,7 +2408,7 @@ A移动到了下一个网络
 两个协议：TCP（靠谱），UDP（不靠谱）
 （文字补一下）（图片——
 
-![传输层两个协议简介](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/传输层两个协议简介.png)
+![传输层两个协议简介](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/传输层两个协议简介.png)
 
 + TCP：面向连接的传输控制协议：要先建立连接。可靠，面向连接，时延大，适用于大文件
 
@@ -2426,9 +2426,9 @@ A移动到了下一个网络
 
 端口长度有16bit，能表示65536个不同的端口号
 
-![传输层的寻址与端口1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/传输层的寻址与端口1.png)
+![传输层的寻址与端口1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/传输层的寻址与端口1.png)
 
-![传输层的寻址与端口2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/传输层的寻址与端口2.png)
+![传输层的寻址与端口2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/传输层的寻址与端口2.png)
 
 在网络中采用发送方和接收方的套接字组合来识别端点，套接字唯一标识了网络中的一个主机和它上面的一个进程。
 
@@ -2450,7 +2450,7 @@ UDP的主要特点：
 
     应用层产生应用层报文 -> 传输层
 
-    ![UDP概述](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP概述.png)
+    ![UDP概述](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP概述.png)
 
     应用层给udp多长的报文，udp就照样发送，一次发一个完整报文
 
@@ -2470,7 +2470,7 @@ UDP检验和：检测整个udp数据报是否有错，错就丢弃
 
 分用时，找不到对应目的端口号，就丢弃报文，并给发送方发送ICMP“端口不可达”的差错报文
 
-![UDP报文首部格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP报文首部格式.png)
+![UDP报文首部格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP报文首部格式.png)
 
 ### UDP校验
 
@@ -2480,11 +2480,11 @@ UDP检验和：检测整个udp数据报是否有错，错就丢弃
 
 udp长度：udp首部8B+数据部分长度（不包括伪首部）
 
-![UDP校验伪首部](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP校验伪首部.png)
+![UDP校验伪首部](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP校验伪首部.png)
 
 ### （用伪首部）进行UDP校验
 
-![UDP校验2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP校验2.png)
+![UDP校验2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP校验2.png)
 
 
 ## TCP协议
@@ -2509,7 +2509,7 @@ udp长度：udp首部8B+数据部分长度（不包括伪首部）
 
 ### TCP报文段首部格式
 
-![TCP报文首部格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/TCP报文首部格式.png)
+![TCP报文首部格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/TCP报文首部格式.png)
 
 序号：在一个TCP连接中传送的**字节流**中的每一个字节都按顺序编号,
 本字段表示本报文段所发送数据的第一个字节的序号。
@@ -2558,7 +2558,7 @@ TCP连接的建立采用客户服务器方式，主动发动 连接建立的应�
 
 三次握手：
 
-![三次握手](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/三次握手.png)
+![三次握手](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/三次握手.png)
 
 ROUND1: 客户端发送连接请求报文段，**无应用层数据**
     SYN=1，seq=x
@@ -2571,7 +2571,7 @@ ROUND3: 客户端为该TCP连接**分配缓存和变量**，并向服务器端�
 
 SYN洪范攻击：
 
-![SYN洪范攻击](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/SYN洪范攻击.png)
+![SYN洪范攻击](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/SYN洪范攻击.png)
 
 解决办法：设置SYN Cookie（了解）
 
@@ -2579,7 +2579,7 @@ SYN洪范攻击：
 
 参与一条TCP的两个进程中的任何一个都能终止该链接，连接结束后，主机中的“资源”（缓存和变量）将被释放。
 
-![四次握手](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/四次握手.png)
+![四次握手](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/四次握手.png)
 
 ROUND1: 客户端发送连接释放报文段，停止发送数据，主动关闭TCP连接。
 FIN=1，seq=u
@@ -2616,7 +2616,7 @@ TCP实现可靠传输的机制：校验，序号，确认，重传
 
 ### TCP流量控制
 
-![TCP流量控制](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/TCP流量控制.png)
+![TCP流量控制](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/TCP流量控制.png)
 
 让发送方发慢点，让接收方来得及接收。
 
@@ -2656,7 +2656,7 @@ TCP为每一个连接设有一个持续计时器，只要tcp连接的一方收�
 
 + 慢开始和拥塞避免算法
 
-![慢开始](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/慢开始.png)
+![慢开始](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/慢开始.png)
 
 
 拥塞窗口以一个报文段长度MSS为单位。
@@ -2674,7 +2674,7 @@ ssthresh：slow start threshold 慢开始阈值。加法增大以拥塞避免。
 
 + 快重传和快恢复：
 
-![快重传和快恢复](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/快重传和快恢复.png)
+![快重传和快恢复](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/快重传和快恢复.png)
 
 快恢复不用从慢开始的1个报文段大小开始，而是直接从新的ssthresh。
 # 第六章 应用层
@@ -2739,7 +2739,7 @@ ssthresh：slow start threshold 慢开始阈值。加法增大以拥塞避免。
 
 应用： Web，文件传输FTP，远程登录，电子邮件
 
-![CS模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/CS模型.png)
+![CS模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/CS模型.png)
 
 ## p2p模型peer to peer
 
@@ -2755,13 +2755,13 @@ ssthresh：slow start threshold 慢开始阈值。加法增大以拥塞避免。
 
 5. 网络健壮性robustness好
 
-![P2P模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/P2P模型.png)
+![P2P模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/P2P模型.png)
 
 ## 域名解析系统DNS
 
 Domain Name System域名解析系统，通过ip地址找到网站。用域名替代ip地址，如 www.baidu.com
 
-![DNS工作过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/DNS工作过程.png)
+![DNS工作过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/DNS工作过程.png)
 
 
 
@@ -2796,7 +2796,7 @@ IP地址和域名的解析
 
 [递归查询，迭代查询](https://blog.csdn.net/yanbao4070/article/details/79892032#:~:text=question%2F311381817.html-,DNS%E8%BF%AD%E4%BB%A3%E5%92%8C%E9%80%92%E5%BD%92%E7%9A%84%E5%8C%BA%E5%88%AB,%E8%AF%B7%E6%B1%82%E7%9B%B4%E8%87%B3%E5%BE%97%E5%88%B0%E6%9C%80%E7%BB%88%E7%AD%94%E6%A1%88%E3%80%82)
 
-![域名解析过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/域名解析过程.png)
+![域名解析过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/域名解析过程.png)
 
 用高速缓存存储最近查询的域名，提高域名解析速度
 
@@ -2826,13 +2826,13 @@ FTP是基于客户/服务器（C/S）的协议
 
 + 登陆 ftp地址：用户名&密码 匿名
 
-![FTP工作原理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/FTP工作原理.png)
+![FTP工作原理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/FTP工作原理.png)
 
 + FTP使用TCP实现可靠传输。
 
 服务器进程：1个主进程，n个从属进程
 
-![FTP工作原理2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/FTP工作原理2.png)
+![FTP工作原理2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/FTP工作原理2.png)
 
 * 控制连接始终保持，只要建立连接。
 
@@ -2861,15 +2861,15 @@ FTP是基于客户/服务器（C/S）的协议
 + 首部To，Subject
 + 主体
 
-![电子邮件的信息格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/电子邮件信息格式.png)
+![电子邮件的信息格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/电子邮件信息格式.png)
 
 ### 组成结构
 
 用户代理-邮件服务器-协议-邮件服务器-用户代理
 
-![电子邮件系统组成结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/电子邮件系统组成结构.png)
+![电子邮件系统组成结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/电子邮件系统组成结构.png)
 
-![电子邮件系统组成结构2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/电子邮件系统组成结构2.png)
+![电子邮件系统组成结构2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/电子邮件系统组成结构2.png)
 
 + **用户代理**功能：撰写，显示，处理，通信
 
@@ -2885,7 +2885,7 @@ SMTP规定了两个相互通信的SMTP进程之间应如何交换信息。
 
 14条命令（几个字母），21种应答信息（三维数字代码+简单文字说明）
 
-![SMTP](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/SMTP.png)
+![SMTP](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/SMTP.png)
 
 SMTP三个阶段：连接建立，邮件传送，连接释放
 
@@ -2904,7 +2904,7 @@ SMTP的缺点：
 
 ### 通用因特网扩送MIME
 
-![MIME](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/MIME.png)
+![MIME](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/MIME.png)
 
 ### 邮局协议POP3
 
@@ -2920,13 +2920,13 @@ pop3的工作方式：
 
 比POP3 复杂
 
-![IMAP](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/IMAP.png)
+![IMAP](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/IMAP.png)
 
 ### 基于万维网的电子邮件
 
 方便，注意中间协议不同
 
-![基于万维网的电子邮件](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/基于万维网的电子邮件.png)
+![基于万维网的电子邮件](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/基于万维网的电子邮件.png)
 
 ## 万维网
 
@@ -2953,7 +2953,7 @@ HTTP协议定义了浏览器（万维网客户进程）怎样向万维网服务�
 
 #### HTTP工作流程
 
-![HTTP工作流程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP工作流程.png)
+![HTTP工作流程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP工作流程.png)
 
 #### HTTP协议特点
 
@@ -2965,11 +2965,11 @@ Cookie：是存储在用户主机中的文本文件，记录一段时间内某�
 
 HTTP采用TCP作为运输层协议，但是HTTP本身是无连接的，通信双方在交换HTTP报文之前不需要先建立HTTP链接。
 
-![HTTP协议特点](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP协议特点.png)
+![HTTP协议特点](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP协议特点.png)
 
 #### 连接方式
 
-![HTTP连接方式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP连接方式.png)
+![HTTP连接方式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP连接方式.png)
 
 非持久连接耗时：两个rtt。
 
@@ -2981,13 +2981,13 @@ HTTP采用TCP作为运输层协议，但是HTTP本身是无连接的，通信双
 
 #### HTTP的报文结构
 
-![HTTP报文结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP报文结构.png)
+![HTTP报文结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP报文结构.png)
 
 #### 状态码
 
 3xx表示重定向，请求的网页转移到了新定位
 
-![HTTP状态码](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP状态码.png)
+![HTTP状态码](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP状态码.png)
 
 ### HTTPS
 
@@ -3002,12 +3002,12 @@ HTTP数据传输过程中所有的数据都是明文传输，容易被窃听截�
 在http的基础上通过传输加密和身份认证保证了传输过程的安全性，原理：在http的基础上加入ssl（安全套接层）层或者TLS（安全传输层协议），混合加密。混合加密是指对称加密（解密加密都是同一个密钥，密钥管理负担问题，密钥也被截获的问题）和非对称加密（公钥私钥）。
 
 
-![https和http关系](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/http1s和http关系.jpeg)
+![https和http关系](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/http1s和http关系.jpeg)
 
 #### 过程
 
 
-![https](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/http1s.jpeg)
+![https](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/http1s.jpeg)
 
 
 1. 首先客户端通过URL访问服务器建立SSL连接。

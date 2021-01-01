@@ -34,7 +34,7 @@
 
 2. 资源子网：应用层，表示层，会话层，实现资源共享/数据处理。
 
-![计算机网络的功能组成](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/计算机网络的功能组成.jpeg)
+![计算机网络的功能组成](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/计算机网络的功能组成.jpeg)
 
 ### 分类
 
@@ -162,7 +162,7 @@ RTT越大，在**收到确认之前**可以发送的数据越多。
 ### 分层结构：
 
 
-![分层结构1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/分层结构1.jpeg)
+![分层结构1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/分层结构1.jpeg)
 
 1. 实体：第n层中的活动元素称为n层实体，同一层实体叫做对等实体
 
@@ -179,7 +179,7 @@ RTT越大，在**收到确认之前**可以发送的数据越多。
 
     PDU 协议数据单元：对等层次之间传送的数据单位。
 
-![分层结构2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/分层结构2.jpeg)
+![分层结构2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/分层结构2.jpeg)
 
 ### 概念总结
 
@@ -221,9 +221,9 @@ OSI模型层之间有很多重复功能
 
 ### 用OSI参考模型解释通信过程
 
-![osi参考模型解释通信过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程.PNG)
+![osi参考模型解释通信过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程.PNG)
 
-![osi参考模型解释通信过程2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程2.PNG)
+![osi参考模型解释通信过程2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/osi参考模型解释通信过程2.PNG)
 
 ### **应用层**
 
@@ -343,7 +343,7 @@ OSI模型层之间有很多重复功能
 
 ### TCP/IP模型
 
-![osi与tcpip模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/osi与tcpip模型.JPG)
+![osi与tcpip模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/osi与tcpip模型.JPG)
 
 相同点：
 
@@ -389,4 +389,4 @@ OSI模型层之间有很多重复功能
 
 ### 五层参考模型的数据封装与解封装
 
-![五层参考模型的数据封装与解封装](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter01/五层参考模型的数据封装与解封装.jpeg)
+![五层参考模型的数据封装与解封装](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter01/五层参考模型的数据封装与解封装.jpeg)

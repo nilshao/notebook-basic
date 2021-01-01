@@ -13,18 +13,18 @@
 如果”按字编址“，每个存储单元大小为1个字，字长十六位的计算机中每个字的大小为16个二进制位。
 
 
-![内存介绍1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/内存介绍1.jpeg)
+![内存介绍1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/内存介绍1.jpeg)
 
 ## 进程的运行原理：指令
 
-![指令](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/指令.jpeg)
+![指令](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/指令.jpeg)
 
 相对地址=逻辑地址，绝对地址=物理地址
 
 
 ## 从写程序到运行
 
-![从写程序到运行](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/从写程序到运行.jpeg)
+![从写程序到运行](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/从写程序到运行.jpeg)
 
 装入模块中的地址指的是“相对地址”，但是装入模块装入内存时，需要对指令中的地址进行处理。装入的三种方式（由三种不同的方法完成逻辑地址到物理地址的转换）：
 
@@ -70,13 +70,13 @@
 
 ## 内存空间的扩充：覆盖和交换
 
-![覆盖和交换](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/覆盖和交换.jpeg)
+![覆盖和交换](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/覆盖和交换.jpeg)
 
 ### 覆盖技术
 
 思想：把程序分为多个段（多个模块）。常用的段常驻内存，不常用的段在需要时放入内存。需要常驻内存的段放在固定区，不常用的段放在覆盖区。内存中分为一个固定区和多个覆盖区。
 
-![覆盖技术](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/覆盖技术.jpeg)
+![覆盖技术](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/覆盖技术.jpeg)
 
 ### 交换技术
 
@@ -97,7 +97,7 @@
 
 （补全文字）
 
-![交换技术](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/交换技术.jpeg)
+![交换技术](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/交换技术.jpeg)
 
 1. 具有兑换功能的操作系统中，通常把磁盘空间分为文件区和对换区
 
@@ -113,7 +113,7 @@
 
 ### 单一连续分配
 
-![单一连续分配](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/单一连续分配.jpeg)
+![单一连续分配](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/单一连续分配.jpeg)
 
 
 ### 固定分区分配
@@ -162,7 +162,7 @@
 
 ### 动态分区分配算法
 
-![动态分区分配算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/动态分区分配算法.jpeg)
+![动态分区分配算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/动态分区分配算法.jpeg)
 
 1. 首次适应算法
 
@@ -189,7 +189,7 @@
 
 比较：
 
-![动态分区分配算法比较](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/动态分区分配算法比较.jpeg)
+![动态分区分配算法比较](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/动态分区分配算法比较.jpeg)
 
 
 
@@ -223,7 +223,7 @@
 
 为了能知道进程的每个页面在内存中存放的位置，操作系统要为每个进程建立一张页表
 
-![页表](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页表.jpeg)
+![页表](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页表.jpeg)
 
 每个页表项的长度是相同的，页号是隐含的。（说不明白就不要说）
 
@@ -235,10 +235,10 @@
 
 进程未执行时，页表的起始地址和页表长度放在进程控制模块PCB中，进程被调度时，操作系统内核会把它们放到页表寄存器中。
 
-![基本地址变换机构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/基本地址变换机构.png)
+![基本地址变换机构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/基本地址变换机构.png)
 
  
-![基本地址变换机构总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/基本地址变换机构总结.png)
+![基本地址变换机构总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/基本地址变换机构总结.png)
 
 ## 具有快##表的地址变换结构
 
@@ -254,24 +254,24 @@
 
 又称**联想寄存器**，是一种访问速度比内存快很多的高速缓冲存储器，用来存放当前访问的若干页表项，以加速地址变换的过程。与此相对，**内存**中的页表称为慢表。
 
-![快表TLB](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/快表TLB.jpeg)
+![快表TLB](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/快表TLB.jpeg)
 
 
 快表中存放的是页表的一部分副本，若快表命中就不需要再访问内存。
 
 ### 引入快表之后，地址的变换过程
 
-![引入快表之后地址的变换过程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/引入快表之后地址的变换过程.jpeg)
+![引入快表之后地址的变换过程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/引入快表之后地址的变换过程.jpeg)
 
 ### 总结
 
-![快表总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/快表总结.jpeg)
+![快表总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/快表总结.jpeg)
 
 ## 两级页表
 
 ### 单级页表的问题
 
-![单级页表的问题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/单级页表的问题.jpeg)
+![单级页表的问题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/单级页表的问题.jpeg)
 
 根据局部性原理，很多时候进程在一段时间内只需要访问某几个页面就可以正常运行了，没有必要让整个页表都常驻内存。
 
@@ -301,7 +301,7 @@
 
 ### 总结
 
-![两级页表总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/两级页表总结.jpeg)
+![两级页表总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/两级页表总结.jpeg)
 
 ## 基本分段存储管理
 
@@ -311,12 +311,12 @@
 
 段表：段的映射表
 
-![分段分页](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/分段分页.jpeg)
+![分段分页](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/分段分页.jpeg)
 
 而且：
 分段比分页更容易实现信息的共享和保护
 
-![分段分页2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/分段分页2.jpeg)
+![分段分页2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/分段分页2.jpeg)
 
 页是信息的物理单位。分页的主要目的是为了实现离散分配,提高内存利用率。分页仅仅是系统管 理上的需要,完全是系统行为,对用户是不可见的。
 段是信息的逻辑单位。分页的主要目的是更好地满足用户需求。一个段通常包含着一组属于一个逻 辑模块的信息。分段对用户是可见的,用户编程时需要显式地给出段名。 页的大小固定且由系统决定。段的长度却不固定,决定于用户编写的程序。 分页的用户进程地址空间是一维的,程序员只需给出一个记忆符即可表示一个地址
@@ -328,7 +328,7 @@
 
 分段:第一次访存ー一査内存中的段表,第二次访存一一访问目标内存单元。总共两次访存。与分页系统类似,分段系统中也可以引入快表机构,将近期访问过的段表项放到快表中,这样可以少一次访问,加快地址变换速度。
 
-![分段总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/分段总结.png)
+![分段总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/分段总结.png)
 
 ## 段页式管理
 
@@ -337,9 +337,9 @@
 
 
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/.jpeg)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/.jpeg)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/.png)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/.png)
 
 
 

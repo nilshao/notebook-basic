@@ -88,7 +88,7 @@
 
 原理：一个进程只有已经占有小编号的资源时，才有资格申请更大编号的资源。按此规则,已持有大编号资源的进程不可能逆向地回来申请小编号的资源,从而就不会产生循环等待的现象。
 
-![破坏循环等待条件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/破坏循环等待条件.png)
+![破坏循环等待条件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/破坏循环等待条件.png)
 
 
 缺点：
@@ -115,9 +115,9 @@
 
 在资源分配之前就先预先判断这次分配是否会导致系统进入不安全状态，如果会进入不安全状态，就暂时不答应这次请求，让该进程先阻塞等待。
 
-![银行家算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/银行家算法.png)
+![银行家算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/银行家算法.png)
 
-![银行家算法2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/银行家算法2.png)
+![银行家算法2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/银行家算法2.png)
 
 
 ## 死锁的检测和解除
@@ -138,11 +138,11 @@
 
 2. 提供一种算法，利用上述信息来检测系统是否已进入死锁状态
 
-![死锁的检测1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/死锁的检测1.png)
+![死锁的检测1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/死锁的检测1.png)
 
-![死锁的检测2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/死锁的检测2.png)
+![死锁的检测2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/死锁的检测2.png)
 
-![死锁的检测3](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/死锁的检测3.png)
+![死锁的检测3](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/死锁的检测3.png)
 
 ### 死锁的解除
 

@@ -92,6 +92,16 @@ C++：new，delete
 单链表优点:不要求大片连续空间,改变容量方便 
 单链表缺点:不可随机存取,要耗费一定空间存放指针
 
+![定义一个单链表](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/定义一个单链表.png)
+
+### 带头节点的单链表
+
+分配一个头节点，L，L->next = NULL
+
+一般用带头节点的列表，如判空等操作更方便。
+
+### 单链表的插入和删除
+
 
 
 ![](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/.png)

@@ -29,7 +29,7 @@
 
 进程的挂起态和七状态模型
 
-![七状态模型](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/七状态模型.png)
+![七状态模型](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/七状态模型.png)
 
 ### 低级调度
 
@@ -41,13 +41,13 @@
 
 ### 三层调度的联系、对比
 
-![三层调度](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/三层调度.png)
+![三层调度](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/三层调度.png)
 
 ## 进程调度的时机
 
 进程调度（低级调度），就是按照某种算法从就绪队列中选择一个进程为其分配处理机
 
-![进程调度的时机](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程调度的时机.png)
+![进程调度的时机](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程调度的时机.png)
 
 **临界资源：** 一个时间段内只允许一个进程使用的资源，各进程需要互斥地访问临界资源。
 
@@ -106,7 +106,7 @@ CPU忙碌的时间占比总时间的比例
 
 ### 带权周转
 
-![带权周转](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/带权周转.png)
+![带权周转](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/带权周转.png)
 
 对于周转时间相同的两个作业,实际运行时间长的作业在相同时间内被服务的时间更多, 带权周转时间更小,用户满意度更高
 
@@ -132,7 +132,7 @@ CPU忙碌的时间占比总时间的比例
 
 ### 总结
 
-![调度算法的评价和指标](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/调度算法的评价和指标.png)
+![调度算法的评价和指标](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/调度算法的评价和指标.png)
 
 ## 调度算法1
 
@@ -166,7 +166,7 @@ CPU忙碌的时间占比总时间的比例
 
 <!--* 例题，计算：
 
-<!--![FCFS例题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/FCFS例题.png)-->
+<!--![FCFS例题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/FCFS例题.png)-->
 
 ### 短作业优先Shortest Job First
 
@@ -186,11 +186,11 @@ CPU忙碌的时间占比总时间的比例
 
 <!--* 例题-->
 
-<!--![SJF例题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/SJF例题.png)-->
+<!--![SJF例题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/SJF例题.png)-->
 
-<!--![SRTN例题1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/SRTN例题1.png)-->
+<!--![SRTN例题1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/SRTN例题1.png)-->
 
-<!--![SRTN例题2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/SRTN例题2.png)-->
+<!--![SRTN例题2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/SRTN例题2.png)-->
 
 ### 高响应比优先Highest Response Ratio Next
 

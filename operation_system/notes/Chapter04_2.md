@@ -14,7 +14,7 @@
 
 磁盘的物理地址：柱面号，盘面号，扇区号。
 
-![磁盘的物理地址](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/磁盘的物理地址.jpeg)
+![磁盘的物理地址](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/磁盘的物理地址.jpeg)
 
 ### 磁盘的分类
 
@@ -24,7 +24,7 @@
 
 ## 磁盘调度算法
 
-![磁盘调度算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/磁盘调度算法.jpeg)
+![磁盘调度算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/磁盘调度算法.jpeg)
 
 ### 一次磁盘读写操作的时间：
 
@@ -69,7 +69,7 @@ SCAN算法对于各个位置磁道的响应频率不均，C-SCAN只在磁头朝�
 
 ### 总结
 
-![磁盘调度算法总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/磁盘调度算法总结.jpeg)
+![磁盘调度算法总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/磁盘调度算法总结.jpeg)
 
 ## 减少延迟时间的方法
 
@@ -87,7 +87,7 @@ SCAN算法对于各个位置磁道的响应频率不均，C-SCAN只在磁头朝�
 
 ### 总结
 
-![减少延迟时间的方法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/减少延迟时间的方法.jpeg)
+![减少延迟时间的方法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/减少延迟时间的方法.jpeg)
 
 ## 磁盘的管理
 

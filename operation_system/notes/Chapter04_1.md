@@ -25,7 +25,7 @@
 
 有结构文件
 
-![文件组织结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件组织结构.png)
+![文件组织结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件组织结构.png)
 
 ### 文件之间的组织
 
@@ -57,7 +57,7 @@
 
 又称记录式文件，由一组相似的记录组成，每一条记录又由若干个数据项组成。一般来说每条记录又一个数据项可以作为关键字，根据各条记录长度又可以分为定长记录和可变长记录。
 
- ![有结构文件逻辑结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/有结构文件逻辑结构.png)
+ ![有结构文件逻辑结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/有结构文件逻辑结构.png)
 
 
 
@@ -70,7 +70,7 @@
 
 能否随机存取，快速查找：
 
-![顺序文件随机存取快速查找](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/顺序文件随机存取快速查找.png)
+![顺序文件随机存取快速查找](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/顺序文件随机存取快速查找.png)
 
 
 ### 索引文件
@@ -85,7 +85,7 @@
 
 ## 文件目录
 
-![文件目录](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件目录.png)
+![文件目录](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件目录.png)
 
 ### 文件控制块FCB
 
@@ -118,7 +118,7 @@
 
 ### 索引结点（FCB的改进）
 
- ![索引结点](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/索引结点.png)
+ ![索引结点](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/索引结点.png)
 
 除了文件名之外的所有信息都放在索引结点中，每个文件对应一个索引结点，目录项中只包含文件名，索引结点指针，因此每个目录项的长度大幅减小
 
@@ -126,7 +126,7 @@
 
 文件数据如何存放在外存中？对非空闲磁盘块的管理（存放了文件数据的磁盘块），对空闲磁盘块的管理
 
- ![文件的分配方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件的分配方式.png)
+ ![文件的分配方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件的分配方式.png)
 
 文件的逻辑地址被分为了一个一个的块，因此文件的逻辑地址也可以表示为 逻辑块号，块内地址。
 
@@ -152,7 +152,7 @@
 
 用户给出要访问的逻辑块号，操作系统找到该文件对应的目录项。访问速度比较快。 
 
-![链接分配总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/链接分配总结.png)
+![链接分配总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/链接分配总结.png)
 
 ### 索引分配
 
@@ -170,17 +170,17 @@
 
 ### 总结
 
-![总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/总结.png)
+![总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/总结.png)
 
 ## 文件存储空间管理
 
-![文件存储空间管理](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件存储空间管理.png)
+![文件存储空间管理](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件存储空间管理.png)
 
 ### 存储空间的划分和初始化
 
 将物理磁盘分为一个个文件卷
 
-![存储空间的划分和初始化](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/存储空间的划分和初始化.png)
+![存储空间的划分和初始化](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/存储空间的划分和初始化.png)
 
 ### 存储空间管理：空闲表法
 
@@ -198,7 +198,7 @@
 
 ### 存储空间管理：位示图法
 
-![位示图法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/位示图法.png)
+![位示图法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/位示图法.png)
 
 0代表盘块空闲，1表示以分配
 
@@ -210,7 +210,7 @@ linux采用的管理方式。
 
 ### 总结
 
-![存储空间管理总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/存储空间管理总结.png)
+![存储空间管理总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/存储空间管理总结.png)
 
 ## 文件的基本操作
 
@@ -218,35 +218,35 @@ linux采用的管理方式。
 
 ### 创建文件：
 
-![创建文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/创建文件.png)
+![创建文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/创建文件.png)
 
 ### 删除文件
 
-![删除文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/删除文件.png)
+![删除文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/删除文件.png)
 
 ### 写文件
 
-![写文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/写文件.png)
+![写文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/写文件.png)
 
 ### 打开文件
 
-![打开文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/打开文件.png)
+![打开文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/打开文件.png)
 
 ### 关闭文件
 
-![关闭文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/关闭文件.png)
+![关闭文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/关闭文件.png)
 
 ### 读文件
 
-![读文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/读文件.png)
+![读文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/读文件.png)
 
 ### 总结
 
-![文件操作总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件操作总结.png)
+![文件操作总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件操作总结.png)
 
 ## 文件共享
 
-![文件共享](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件共享.png)
+![文件共享](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件共享.png)
 
 ### 基于索引的共享方式
 
@@ -258,7 +258,7 @@ linux采用的管理方式。
 
 快捷方式，链接一个路径信息
 
-![文件共享总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件共享总结.png)
+![文件共享总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件共享总结.png)
 
 ## 文件保护
 
@@ -276,15 +276,15 @@ linux采用的管理方式。
 
 为文件设置密码。如异或加密。
 
-![加密保护](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/加密保护.png)
+![加密保护](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/加密保护.png)
 
 ### 访问控制
 
 在每个文件的fcb或索引结点增加一个访问控制表（access control list），该表中记录了每个用户可以对该文件执行哪些操作（权限）。
 
-![文件保护总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件保护总结.png)
+![文件保护总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件保护总结.png)
 
 
 ## 文件系统的层次结构
 
-![文件系统的层次结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件系统的层次结构.png)
+![文件系统的层次结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件系统的层次结构.png)

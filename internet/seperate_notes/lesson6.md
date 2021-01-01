@@ -60,7 +60,7 @@
 
 应用： Web，文件传输FTP，远程登录，电子邮件
 
-![CS模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/CS模型.png)
+![CS模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/CS模型.png)
 
 ## p2p模型peer to peer
 
@@ -76,13 +76,13 @@
 
 5. 网络健壮性robustness好
 
-![P2P模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/P2P模型.png)
+![P2P模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/P2P模型.png)
 
 ## 域名解析系统DNS
 
 Domain Name System域名解析系统，通过ip地址找到网站。用域名替代ip地址，如 www.baidu.com
 
-![DNS工作过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/DNS工作过程.png)
+![DNS工作过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/DNS工作过程.png)
 
 
 
@@ -117,7 +117,7 @@ IP地址和域名的解析
 
 [递归查询，迭代查询](https://blog.csdn.net/yanbao4070/article/details/79892032#:~:text=question%2F311381817.html-,DNS%E8%BF%AD%E4%BB%A3%E5%92%8C%E9%80%92%E5%BD%92%E7%9A%84%E5%8C%BA%E5%88%AB,%E8%AF%B7%E6%B1%82%E7%9B%B4%E8%87%B3%E5%BE%97%E5%88%B0%E6%9C%80%E7%BB%88%E7%AD%94%E6%A1%88%E3%80%82)
 
-![域名解析过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/域名解析过程.png)
+![域名解析过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/域名解析过程.png)
 
 用高速缓存存储最近查询的域名，提高域名解析速度
 
@@ -147,13 +147,13 @@ FTP是基于客户/服务器（C/S）的协议
 
 + 登陆 ftp地址：用户名&密码 匿名
 
-![FTP工作原理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/FTP工作原理.png)
+![FTP工作原理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/FTP工作原理.png)
 
 + FTP使用TCP实现可靠传输。
 
 服务器进程：1个主进程，n个从属进程
 
-![FTP工作原理2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/FTP工作原理2.png)
+![FTP工作原理2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/FTP工作原理2.png)
 
 * 控制连接始终保持，只要建立连接。
 
@@ -182,15 +182,15 @@ FTP是基于客户/服务器（C/S）的协议
 + 首部To，Subject
 + 主体
 
-![电子邮件的信息格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/电子邮件信息格式.png)
+![电子邮件的信息格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/电子邮件信息格式.png)
 
 ### 组成结构
 
 用户代理-邮件服务器-协议-邮件服务器-用户代理
 
-![电子邮件系统组成结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/电子邮件系统组成结构.png)
+![电子邮件系统组成结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/电子邮件系统组成结构.png)
 
-![电子邮件系统组成结构2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/电子邮件系统组成结构2.png)
+![电子邮件系统组成结构2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/电子邮件系统组成结构2.png)
 
 + **用户代理**功能：撰写，显示，处理，通信
 
@@ -206,7 +206,7 @@ SMTP规定了两个相互通信的SMTP进程之间应如何交换信息。
 
 14条命令（几个字母），21种应答信息（三维数字代码+简单文字说明）
 
-![SMTP](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/SMTP.png)
+![SMTP](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/SMTP.png)
 
 SMTP三个阶段：连接建立，邮件传送，连接释放
 
@@ -225,7 +225,7 @@ SMTP的缺点：
 
 ### 通用因特网扩送MIME
 
-![MIME](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/MIME.png)
+![MIME](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/MIME.png)
 
 ### 邮局协议POP3
 
@@ -241,13 +241,13 @@ pop3的工作方式：
 
 比POP3 复杂
 
-![IMAP](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/IMAP.png)
+![IMAP](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/IMAP.png)
 
 ### 基于万维网的电子邮件
 
 方便，注意中间协议不同
 
-![基于万维网的电子邮件](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/基于万维网的电子邮件.png)
+![基于万维网的电子邮件](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/基于万维网的电子邮件.png)
 
 ## 万维网
 
@@ -274,7 +274,7 @@ HTTP协议定义了浏览器（万维网客户进程）怎样向万维网服务�
 
 #### HTTP工作流程
 
-![HTTP工作流程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP工作流程.png)
+![HTTP工作流程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP工作流程.png)
 
 #### HTTP协议特点
 
@@ -286,11 +286,11 @@ Cookie：是存储在用户主机中的文本文件，记录一段时间内某�
 
 HTTP采用TCP作为运输层协议，但是HTTP本身是无连接的，通信双方在交换HTTP报文之前不需要先建立HTTP链接。
 
-![HTTP协议特点](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP协议特点.png)
+![HTTP协议特点](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP协议特点.png)
 
 #### 连接方式
 
-![HTTP连接方式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP连接方式.png)
+![HTTP连接方式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP连接方式.png)
 
 非持久连接耗时：两个rtt。
 
@@ -302,13 +302,13 @@ HTTP采用TCP作为运输层协议，但是HTTP本身是无连接的，通信双
 
 #### HTTP的报文结构
 
-![HTTP报文结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP报文结构.png)
+![HTTP报文结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP报文结构.png)
 
 #### 状态码
 
 3xx表示重定向，请求的网页转移到了新定位
 
-![HTTP状态码](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/HTTP状态码.png)
+![HTTP状态码](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/HTTP状态码.png)
 
 ### HTTPS
 
@@ -323,12 +323,12 @@ HTTP数据传输过程中所有的数据都是明文传输，容易被窃听截�
 在http的基础上通过传输加密和身份认证保证了传输过程的安全性，原理：在http的基础上加入ssl（安全套接层）层或者TLS（安全传输层协议），混合加密。混合加密是指对称加密（解密加密都是同一个密钥，密钥管理负担问题，密钥也被截获的问题）和非对称加密（公钥私钥）。
 
 
-![https和http关系](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/http1s和http关系.jpeg)
+![https和http关系](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/http1s和http关系.jpeg)
 
 #### 过程
 
 
-![https](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter06/http1s.jpeg)
+![https](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter06/http1s.jpeg)
 
 
 1. 首先客户端通过URL访问服务器建立SSL连接。

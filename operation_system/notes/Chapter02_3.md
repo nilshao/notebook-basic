@@ -15,7 +15,7 @@
 
 把一个时间段内只允许一个进程使用的资源称为**临界资源**，对临界资源的访问必须**互斥**地执行，即同一时间段内只能允许一个进程访问该资源，对临界资源的互斥访问分为四个部分：
 
-![临界资源访问](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/临界资源访问.png)
+![临界资源访问](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/临界资源访问.png)
 
 注意:
 * **进入区** 负责检查是否可进入临界区,若可进入,则应设置正在问临界资源的标志(可理解为 **“上锁”**),以阻止其他进程同时进入临界区
@@ -38,7 +38,7 @@
 
 ### 总结
 
-![进程互斥总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程互斥总结.jpeg)
+![进程互斥总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程互斥总结.jpeg)
 
 ## 进程互斥的软件实现
 
@@ -53,7 +53,7 @@
 
 思想：两个进程在访问完临界区后会把使用临界区的权限转交给另一个进程，也就是说每一个进程进入临界区的权限只能被另一个进程赋予。
 
-![单标志法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/单标志法.png)
+![单标志法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/单标志法.png)
 
 这种必须“轮流访问”带来的问题是,如果此时允许进入临界区的进程是PO,而PO一直不访问临界 区,那么虽然此时临界区空闲,但是并不允许P1访问。**违背了空闲让进原则。**
 
@@ -61,7 +61,7 @@
 
 思想：设置一个布尔型数组flag[]，数组中各个元素用来标记各进程想进入临界区的意愿，比如flag[0]=true标识0号进程现在想要进入临界区。每个进程进入临界区之前先检查当前有没有别的进程想要进入临界区，如果没有，则把自己对应的标志flag[i]设置为true，之后开始访问临界区。
 
-![双标志先检查法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/双标志先检查法.png)
+![双标志先检查法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/双标志先检查法.png)
 
 有可能多个进程**同时访问到临界区**：进入区的“检查”和“上锁”两个处理不是一气呵成的，“检查”后，“上锁”前可能发生进程切换。**违反“忙则等待”原则**
 
@@ -69,7 +69,7 @@
 
 改进双标志先检查法，前一个算法的问题时先检查后上锁，但是这两个操作没法一气呵成，因此可能两个进程同时进入临界区，所以可以先上锁后检查
 
-![双标志后检查法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/双标志后检查法.png)
+![双标志后检查法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/双标志后检查法.png)
 
 但是违反了空闲让进和有限等待，两个进程都想进入临界区但是互不相让，可能会产生饥饿现象。
 
@@ -77,7 +77,7 @@
 
 双标志后检查算法中，两个算法互相争抢，Peterson算法中，如果双方都争着想进入临界区，那可以让进程主动让对方先使用临界区
 
-![peterson算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/peterson算法.png)
+![peterson算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/peterson算法.png)
 
 遵循了空闲让进，忙则等待，有限等待，但是没有遵循**让权等待**
 
@@ -97,7 +97,7 @@
 
 用硬件实现的，执行的过程中不允许被中断，只能一气呵成，
 
-![testandset](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/testandset.png)
+![testandset](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/testandset.png)
 
 若刚开始lock是false,则TSL返回的old值为 false, while循环条件不满足,直接跳过循环,进入临界区。若刚开始lock是true,则执行TLS后old返回的值为true, while循环条件满足,会一直循环,直到当前访问临界区的进程在退出区进行“解锁”。
 
@@ -112,7 +112,7 @@
 
 Swap指令是用硬件实现的,执行的过程不允许被中断,只能一气呵成。以下是用C语言描述的逻辑
 
-![Swap指令](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/Swap指令.png)
+![Swap指令](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/Swap指令.png)
 
 逻辑上来看Swap和TSL并无太大区别,都是先记录下此时临界区是否已经被上锁(记录在old变量上),再将上锁标记lock设置为true,最后检查old,如果old为false则说明之前没有别的进程对临界区上锁,则可跳出循环,进入临界区。
 
@@ -122,7 +122,7 @@ Swap指令是用硬件实现的,执行的过程不允许被中断,只能一气�
 
 ### 总结
 
-![进程互斥的硬件实现总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程互斥的硬件实现总结.png)
+![进程互斥的硬件实现总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程互斥的硬件实现总结.png)
 
 ## 信号量机制
 
@@ -144,7 +144,7 @@ wait(S)和signal(S)是自己写的函数，S就是信号量
 
 整形信号量，用来表示系统中某种资源的数量，如系统中有一台计算机 S为1
 
-![整形信号量](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/整形信号量.png)
+![整形信号量](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/整形信号量.png)
 
 对信号量的操作只有三种：初始化，P操作和V操作
 
@@ -156,7 +156,7 @@ wait(S)和signal(S)是自己写的函数，S就是信号量
 
 用记录型数据结构表示的信号量
 
-![记录型信号量](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/记录型信号量.png)
+![记录型信号量](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/记录型信号量.png)
 
 释放资源后，若还有别的进程在等待这种资源，则使用wakeup原语唤醒等待队列中的一个进程，该进程从阻塞态变为就绪态
 
@@ -185,11 +185,11 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 信号量机制实现前驱关系
 
-![信号量机制实现前驱关系](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/信号量机制实现前驱关系.png)
+![信号量机制实现前驱关系](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/信号量机制实现前驱关系.png)
 
 ### 信号量机制实现各种操作总结
 
-![信号量机制实现各种操作总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/信号量机制实现各种操作总结.png)
+![信号量机制实现各种操作总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/信号量机制实现各种操作总结.png)
 
 ## 生产者消费者问题
 
@@ -245,7 +245,7 @@ S.value的初值表示系统中某种资源的数目。
 
 3. 每次仅允许一个进程在管程内执行某个内部过程
 
-![用管程解决生产者消费者问题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/用管程解决生产者消费者问题.png)
+![用管程解决生产者消费者问题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/用管程解决生产者消费者问题.png)
 
 由编译器负责实现各进程互斥地进入管程中的过程
 
@@ -255,9 +255,9 @@ S.value的初值表示系统中某种资源的数目。
 
 2. 需要在管程中定义用于访问这些共享数据的“入口”————其实就是一些函数
 
-![管程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/管程.png)
+![管程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/管程.png)
 
 ### 管程总结
 
-![管程总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/管程总结.png)
+![管程总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/管程总结.png)
 

@@ -20,28 +20,28 @@ Unix系统将外部设备抽象为一种特殊的文件，用户可以使用与�
 
 接受和识别cpu发出的指令，向CPU报告设备的状态，数据交换，地址识别。
 
-![io控制器的功能](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/io控制器的功能.jpeg)
+![io控制器的功能](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/io控制器的功能.jpeg)
 
 ### IO控制器的组成
 
 IO控制器和CPU的接口，IO逻辑，控制器和设备的接口。
 
-![IO控制器的组成](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/IO控制器的组成.jpeg)
+![IO控制器的组成](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/IO控制器的组成.jpeg)
 
 
 
 
 
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.jpeg)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.jpeg)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.jpg)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.jpg)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.JPG)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.JPG)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.png)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.png)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.PNG)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.PNG)
 
 
 

@@ -54,12 +54,12 @@
 
 + 报文交换和分组交换比较：
 
-![报文交换分组交换比较](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/报文交换分组交换比较.JPG)
+![报文交换分组交换比较](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/报文交换分组交换比较.JPG)
 
 
 + 三种数据交换方式比较总结
 
-    ![三种数据报交换比较](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/三种数据报交换比较.JPG)
+    ![三种数据报交换比较](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/三种数据报交换比较.JPG)
 
 
     1. 报文交换和分组交换都采用存储转发
@@ -111,7 +111,7 @@
 
 ### 数据报和虚电路比较
 
-![数据报和虚电路](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/数据报和虚电路.JPG)
+![数据报和虚电路](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/数据报和虚电路.JPG)
 
 ## IP数据报格式
 
@@ -119,15 +119,15 @@
 
 TCP/IP协议栈的位置（橙色）
 
-![TCP/IP协议栈](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/tcpip协议栈.JPG)
+![TCP/IP协议栈](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/tcpip协议栈.JPG)
 
 数据部分由运输层
 
-![IPv4数据报格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/ipv4数据报格式.JPG)
+![IPv4数据报格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/ipv4数据报格式.JPG)
 
 固定部分为20字节固定长度
 
-![IP数据报格式固定格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/IP数据报格式固定格式.JPG)
+![IP数据报格式固定格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/IP数据报格式固定格式.JPG)
 
 1. 版本：IPv4 or IPv6?
 
@@ -141,7 +141,7 @@ TCP/IP协议栈的位置（橙色）
 
 6. 协议：数据部分的协议
 
-![协议名字段值](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/协议名字段值.JPG)
+![协议名字段值](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/协议名字段值.JPG)
 
 7. 首部检验和：只检验首部，注意经过每个路由器都要更新一下，因为生存时间，片偏移会发生变化
 
@@ -157,7 +157,7 @@ TCP/IP协议栈的位置（橙色）
 
 以太网的MTU是1500字节
 
-![最大传送单元MTU](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/最大传送单元MTU.JPG)
+![最大传送单元MTU](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/最大传送单元MTU.JPG)
 
 如果所传诵的数据报长度超过某链路的MTU值怎么办？————分片
 
@@ -350,7 +350,7 @@ IPv6改进了首部格式，加快路由器处理速度，转发数据报速度
 
 固定40B首部：
 
-![IPv6数据报格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/ipv6数据报格式.JPG)
+![IPv6数据报格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/ipv6数据报格式.JPG)
 
 + 版本：指明了协议版本，总是6
 
@@ -414,7 +414,7 @@ IPv6改进了首部格式，加快路由器处理速度，转发数据报速度
 
 ## 路由算法以及路由协议
 
-![路由算法1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/路由算法1.JPG)
+![路由算法1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/路由算法1.JPG)
 
 路由表/转发表中的表项是由那里得到的呢？路由算法
 
@@ -453,19 +453,19 @@ IPv6改进了首部格式，加快路由器处理速度，转发数据报速度
     自治系统AS：（图片补文字
 
 
-![AS1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS1.JPG)
+![AS1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS1.JPG)
 
 
-![AS2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS2.JPG)
+![AS2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS2.JPG)
 
-![AS3](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS3.JPG)
+![AS3](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS3.JPG)
 
 
 ## RIP协议和距离向量算法
 
 回顾：
 
-![AS2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/AS2.jpeg)
+![AS2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/AS2.jpeg)
 
 RIP协议是一种分布式的，基于距离向量的路由选择协议，是因特网的协议标准，最大优点是简单。
 
@@ -474,7 +474,7 @@ RIP协议要求网络中**每一个路由器**都维护从它自己到其他**�
 例子：R2的路由表
 
 
-![R2的路由表](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/R2的路由表.jpeg)
+![R2的路由表](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/R2的路由表.jpeg)
 
 距离通常指“跳数”，即从源端口到目的端口所经过的路由器个数，经过一个路由器跳数+1，特别的，从一路由器到直接连接的网络距离为1。RIP允许一条路由最多只能包含15个路由器，因此距离为**16表示网络不可达**。
 
@@ -510,12 +510,12 @@ RIP协议要求网络中**每一个路由器**都维护从它自己到其他**�
 
 图片，补文字
 
-![距离向量算法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/距离向量算法.jpeg)
+![距离向量算法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/距离向量算法.jpeg)
 
 
 RIP协议报文格式
 
-![RIP协议报文格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/RIP协议报文格式.jpeg)
+![RIP协议报文格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/RIP协议报文格式.jpeg)
 
 RIP是应用层协议，使用UDP传送数据
 
@@ -545,19 +545,19 @@ OSPF最主要特征是使用分布式的链路状态协议
 
 （补一下文字
 
-![链路状态路由算法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/链路状态路由算法.jpeg)
+![链路状态路由算法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/链路状态路由算法.jpeg)
 
 7. 使用Dijkstra根据自己的链路状态数据库构造到其他节点间的最短路径。
 
 ### OSPF的区域
 
-![OSPF的区域](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/OSPF的区域.JPG)
+![OSPF的区域](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/OSPF的区域.JPG)
 
 ### OSPF分组
 
 OSPF分组用IP数据报传送，RIP是用UDP
 
-![OSPF分组](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/OSPF分组.JPG)
+![OSPF分组](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/OSPF分组.JPG)
 
 ### 其他特点
 
@@ -572,7 +572,7 @@ OSPF分组用IP数据报传送，RIP是用UDP
 
 问题：
 
-![BGP结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP结构.jpeg)
+![BGP结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP结构.jpeg)
 
 
 + 和谁交换？与其他的AS的邻站BGP发言人交换信息。
@@ -591,16 +591,16 @@ AS：自治系统
 
 BGP发言人交换路径向量：
 
-![BGP协议交换信息的过程1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程1.JPG)
+![BGP协议交换信息的过程1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程1.JPG)
 
-![BGP协议交换信息的过程2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程2.JPG)
+![BGP协议交换信息的过程2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP协议交换信息的过程2.JPG)
 
 
 ### BGP协议报文格式
 
 BGP是一个应用层协议
 
-![BGP协议报文格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/BGP协议报文格式.JPG)
+![BGP协议报文格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/BGP协议报文格式.JPG)
 
 ### BGP协议特点
 
@@ -624,7 +624,7 @@ BGP是一个应用层协议
 
 3. BGP是一个外部网关协议，在不同的自治系统之间交换路由信息，由于网络环境复杂，需要保证可靠传输，所以采用TCP
 
-![三种路由协议比较](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/三种路由协议比较.JPG)
+![三种路由协议比较](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/三种路由协议比较.JPG)
 
 ## IP组播
 
@@ -636,7 +636,7 @@ IP数据报的三种传输方式：单播，广播，组播（多播）
 
 * 组播（多播）：点对多点的传播方式
 
-![组播多播](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/组播多播.jpeg)
+![组播多播](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/组播多播.jpeg)
 
 
 单播，组播示意图
@@ -659,18 +659,18 @@ IP组播地址让源设备能够将分组发送给一组设备，
 
 ### 移动IP概念
 
-![移动IP概念](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/移动IP概念.jpeg)
+![移动IP概念](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/移动IP概念.jpeg)
 
 
 ### 移动IP通信过程
 
-![移动IP通信过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/移动IP通信过程.jpeg)
+![移动IP通信过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/移动IP通信过程.jpeg)
 
 3. 外部代理拆封数据报并发给A
 
 A移动到了下一个网络
 
-![移动IP通信过程2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/移动IP通信过程2.jpeg)
+![移动IP通信过程2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/移动IP通信过程2.jpeg)
 
 ## 网络层设备
 
@@ -678,7 +678,7 @@ A移动到了下一个网络
 
 **路由器结构：**
 
-![路由器结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/路由器结构.jpeg)
+![路由器结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/路由器结构.jpeg)
 
 **路由选择：** 根据所选定的路由选择协议构造出路由表，同时经常或定期的与相邻路由器交换路由信息而不断的更新和维护路由表。
 
@@ -686,11 +686,11 @@ A移动到了下一个网络
 
 输入端口对线路上收到分组的处理
 
-![输入端口对线路上收到分组的处理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/输入端口对线路上收到分组的处理.jpeg)
+![输入端口对线路上收到分组的处理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/输入端口对线路上收到分组的处理.jpeg)
 
 输出端口对线路上收到分组的处理
 
-![输出端口对线路上收到分组的处理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/输出端口对线路上收到分组的处理.jpeg)
+![输出端口对线路上收到分组的处理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/输出端口对线路上收到分组的处理.jpeg)
 
 若路由器处理分组的速率赶不上分组进入队列的速率，则队列的存储空间必定减少到零，这就使后面再进入队列的分组由于没有存储空间而只能被丢弃
 
@@ -700,7 +700,7 @@ A移动到了下一个网络
 ### 三层设备的区别
 
 
-![三层设备的区别](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/三层设备的区别.jpeg)
+![三层设备的区别](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/三层设备的区别.jpeg)
 
 ### 路由表和路由转发
 
@@ -710,7 +710,7 @@ A移动到了下一个网络
 
 路由转发是
 
-![路由表和路由转发](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter04/路由表和路由转发.jpeg)
+![路由表和路由转发](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter04/路由表和路由转发.jpeg)
 
 
 

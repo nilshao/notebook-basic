@@ -51,7 +51,7 @@
 
 + 四种方法：字符计数法，字符（字节）填充法，零比特填充法，违规编码法
 
-![封装成帧](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/封装成帧.JPG)
+![封装成帧](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/封装成帧.JPG)
 
 ## 透明传输
 
@@ -65,7 +65,7 @@
 
 帧首部用一个计数字段（第一个字节，八位）来标明帧内字符数。
 
-![字符计数法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/字符计数法.JPG)
+![字符计数法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/字符计数法.JPG)
 
 问题：万一这个计数字段也有问题
 
@@ -73,7 +73,7 @@
 
 帧的三个部分：
 
-![字符填充法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/字符填充法.JPG)
+![字符填充法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/字符填充法.JPG)
 
 
 + SOH（start of header）00000001
@@ -85,7 +85,7 @@
 应用：传送文件是由文本文件组成时（文本文件字符都是从键盘上输入的，可用ascii码表达）。当传送的帧是由非ascii码的文本文件组成时（程序/图像等）就不行。可能在
 信息中有和eot字段相同的组合，这时候就要采用字符填充的方法实现透明传输。
 
-![字符填充法_发送接收](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/字符填充法_发送接收.JPG)
+![字符填充法_发送接收](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/字符填充法_发送接收.JPG)
 
 
 在与EOT相同的字段前加**转义字符**ESC作为字节填充，与转义字符ESC相同的前面也要添加
@@ -157,9 +157,9 @@
 
 最终发送的数据是要发送的数据+**帧检验数列**FCS
 
-![CRC循环冗余码](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/CRC循环冗余码.png)
+![CRC循环冗余码](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/CRC循环冗余码.png)
 
-![crc接收端检错](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/crc接收端检错.JPG)
+![crc接收端检错](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/crc接收端检错.JPG)
 
 
 总结：在数据链路层仅仅使用循环冗余检验CRC差错检测技术，只能做到对帧的无差错接收，即“凡是接收端数据链路层接受的帧，
@@ -179,7 +179,7 @@
 
 确定校验码位数r -> 确定校验码和数据的位置 -> 求出校验码的值 -> 捡错纠错
 
-![海明码求校验码](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/海明码求校验码.JPG)
+![海明码求校验码](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/海明码求校验码.JPG)
 
 1. 确定校验码位数r
 
@@ -262,7 +262,7 @@ SR：发送窗口大小 > 1，接收窗口大小 > 1
 
 ### 无差错情况
 
-![停等协议无差错](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议无差错.JPG)
+![停等协议无差错](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议无差错.JPG)
 
 ### 有差错情况
 
@@ -271,22 +271,22 @@ ACK：确认帧（1bit的1和0编号就够）
 
 1. 数据帧丢失或检测到帧出错
 
-![数据帧丢失或检测到帧出错](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/数据帧丢失或检测到帧出错.png)
+![数据帧丢失或检测到帧出错](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/数据帧丢失或检测到帧出错.png)
 
 RTT：往返传播时延round trip time
 
 2. ACK丢失
 
-![停等协议有差错ack丢失](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议有差错ack丢失.JPG)
+![停等协议有差错ack丢失](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议有差错ack丢失.JPG)
 
 3. ACK迟到
 
-![ACK迟到](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/ACK迟到.png)
+![ACK迟到](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/ACK迟到.png)
 
 
 ### 性能分析
 
-![停等协议性能分析](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议性能分析.png)
+![停等协议性能分析](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议性能分析.png)
 
 
 简单，信道利用率太低，但大部分时间都在路上
@@ -301,13 +301,13 @@ T内发送L比特数据；发送周期T：从开始发送数据，到收到第�
 
 **信道吞吐率** = 信道利用率*发送方的发送速率
 
-![信道利用率信道吞吐率](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/信道利用率信道吞吐率.JPG)
+![信道利用率信道吞吐率](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/信道利用率信道吞吐率.JPG)
 
 ### 流水线技术
 
 增加缓存空间
 
-![停等协议的弊端](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/停等协议的弊端.JPG)
+![停等协议的弊端](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/停等协议的弊端.JPG)
 
 
 ## 滑动窗口：选择重传协议SR
@@ -318,7 +318,7 @@ SR：设置单个确认，同时加大接收窗口，设置接收缓存，缓存
 
 ### 选择重传协议中的滑动窗口
 
-![选择重传中的滑动窗口](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/选择重传中的滑动窗口.JPG)
+![选择重传中的滑动窗口](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/选择重传中的滑动窗口.JPG)
 
 （注意上下例子是分开的，不是同一个时序中）
 
@@ -345,7 +345,7 @@ SR接收方将确认一个正确接收的帧而**不管其是否按序**。失�
 
 ### 运行中的SR
 
-![运行中的SR](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/运行中的SR.JPG)
+![运行中的SR](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/运行中的SR.JPG)
 
 
 ### 滑动窗口长度
@@ -366,7 +366,7 @@ SR接收方将确认一个正确接收的帧而**不管其是否按序**。失�
 
 ### 滑动窗口
 
-![后退n帧接收窗口](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/后退n帧接收窗口.JPG)
+![后退n帧接收窗口](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/后退n帧接收窗口.JPG)
 
 + 发送端要拷贝副本，万一帧错误or丢失
 
@@ -397,7 +397,7 @@ gbn协议中，对n号帧采用累计确认方式，表明接收方已经收到n
 
 ### 运行中的GBN
 
-![运行中的GBN](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/运行中的GBN.JPG)
+![运行中的GBN](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/运行中的GBN.JPG)
 
 
 ### 滑动窗口长度
@@ -444,7 +444,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 静态划分信道，动态分配信道
 
-![介质访问控制](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/介质访问控制.JPG)
+![介质访问控制](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/介质访问控制.JPG)
 
 ### 什么是信道划分介质访问控制
 
@@ -453,7 +453,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 信道划分介质访问控制：将使用介质的每个设备与来自同一信道上的其他设备的通信隔离开，
 把**时域**和**频域**资源合理地分配给网络上的设备。
 
-![信道划分介质访问控制](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/信道划分介质访问控制.JPG)
+![信道划分介质访问控制](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/信道划分介质访问控制.JPG)
 
 多路复用技术：把多个信号组合在一条物理信道上进行传输，使得多个计算机或终端设备共享信道资源，提高信道利用率。
 
@@ -466,24 +466,24 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 + 频分复用：不同用户在同样的时间占用不同的带宽。充分利用传输介质带宽，系统效率较高；由于技术比较成熟，实现也比较容易。
 
-![频分多路复用fdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/频分多路复用fdm.JPG)
+![频分多路复用fdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/频分多路复用fdm.JPG)
 
 
 + 时分复用：一个周期中各个用户占有一个*固定序号*的时隙,用户轮流占用信道。
 
-![时分多路复用tdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/时分多路复用tdm.JPG)
+![时分多路复用tdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/时分多路复用tdm.JPG)
 
 + 改进的时分复用————统计时分复用STDM：**集中器**按需动态分配时隙。
 
-![统计时分复用stdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/统计时分复用stdm.JPG)
+![统计时分复用stdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/统计时分复用stdm.JPG)
 
 + 波分多路复用：**光**的频分多路复用。
 
-![波分多路复用wdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/波分多路复用wdm.JPG)
+![波分多路复用wdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/波分多路复用wdm.JPG)
 
 + 码分多路复用：码分多址（CDMA）是码分复用的一种方式。m一般为64或128。这里的8是方便讲解（自己再查一下）
 
-![码分多路复用cdm](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/码分多路复用cdm.JPG)
+![码分多路复用cdm](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/码分多路复用cdm.JPG)
 
 
 ## 轮询访问介质访问控制
@@ -509,7 +509,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 令牌：一个特殊格式的mac控制帧，不含任何信息。控制信道的使用，确保同一时刻只有一个结点独占信道。令牌环网无碰撞
 
-![令牌传递协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/令牌传递协议.JPG)
+![令牌传递协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/令牌传递协议.JPG)
 
 每个节点都可以在一定时间内（令牌持有时间）获得发送数据的权利，不是无限制地持有令牌
 
@@ -525,7 +525,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 思想：不监听信道，不按时间槽发送，*随机*重发。（想发就发）T0:发送时间，包括传输时间和传播时间。
 
-![纯aloha协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/纯aloha协议.jpeg)
+![纯aloha协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/纯aloha协议.jpeg)
 
 冲突如何检测：如果发生冲突，接收方就会检测出差错，然后不予确认，发送方在一定时间内收不到就判断发生了冲突。
 
@@ -535,7 +535,7 @@ con：在重传时必须把原来已经正确传送的数据帧批量重传，�
 
 思想：把时间分成若干个相同的时间片，所有用户在时间片开始时刻同步接入网络信道，若发生冲突，则必须等到下一个时间片开始时刻再发送。（控制了想发就发的随意性）
 
-![时隙aloha协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/时隙aloha协议.jpeg)
+![时隙aloha协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/时隙aloha协议.jpeg)
 
 ### 总结
 
@@ -594,7 +594,7 @@ MA：**多点接入**，即多个计算机以多点接入的方式连接在同�
 
 #### 对比
 
-![CSMA对比](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/CSMA对比.jpeg)
+![CSMA对比](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/CSMA对比.jpeg)
 
 ### 动态分配信道 CSMA-CD协议 (先听再说，边听边说)
 
@@ -610,11 +610,11 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 #### 传播时延对载波监听的影响
 
-![传播时延对载波监听的影响](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响.JPG)
+![传播时延对载波监听的影响](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响.JPG)
 
 冲突，碰撞
 
-![传播时延对载波监听的影响过程](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响过程.jpeg)
+![传播时延对载波监听的影响过程](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/传播时延对载波监听的影响过程.jpeg)
 
 碰撞后信息发生叠加，可以检测出来。
 
@@ -632,7 +632,7 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 4. 当重传次数达到16次仍不能成功时，说明网络太拥挤，认为此帧永远无法正确发出，抛弃此帧并向高层报告出错。重传：截断二进制指数规避算法。
 
-![截断二进制指数规避算法](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/截断二进制指数规避算法.JPG)
+![截断二进制指数规避算法](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/截断二进制指数规避算法.JPG)
 
 #### 总结
 
@@ -640,7 +640,7 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 #### 例题
 
-![截断二进制指数规避习题](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/截断二进制指数规避习题.JPG)
+![截断二进制指数规避习题](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/截断二进制指数规避习题.JPG)
 
 #### 最小帧长
 
@@ -648,7 +648,7 @@ CD：碰撞检测（冲突检测），“边发送边监听”，适配器边发
 
 真的传输时延至少要两倍于信号在总线中的传播时延。（公式图片——）但最小64B，不足则填充
 
-![帧传输最小帧长](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/帧传输最小帧长.JPG)
+![帧传输最小帧长](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/帧传输最小帧长.JPG)
 
 ### 动态分配信道 CSMA-CA协议
 
@@ -688,7 +688,7 @@ CA：无线局域网：
 
 #### csma/cd 与 csma/ca总结
 
-![csma/cd和csma/ca总结](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/csmacd和csmaca总结.JPG)
+![csma/cd和csma/ca总结](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/csmacd和csmaca总结.JPG)
 
 
 ### 局域网
@@ -711,7 +711,7 @@ CA：无线局域网：
 
 星型，总线型，环形，树形
 
-![局域网拓扑结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/局域网拓扑结构.JPG)
+![局域网拓扑结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/局域网拓扑结构.JPG)
 
 
 #### 局域网介质访问控制方法
@@ -740,7 +740,7 @@ CA：无线局域网：
 
 IEEE802标准所描述的局域网参考模型对应OSI参考模型的数据链路层和物理层，它将数据链路层划分为逻辑链路层LLC，和介质访问控制MAC子层。（图片
 
-![mac子层和llc子层](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/mac子层和llc子层.JPG)
+![mac子层和llc子层](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/mac子层和llc子层.JPG)
 
 + LLC负责识别网络层协议，然后对他们进行封装。LLC报头告诉数据链路层一旦帧被接收时，应当对数据包如何处理。为网络层提供服务：无确认无连接、面向连接、带确认无连接、高速传送。
 
@@ -770,11 +770,11 @@ IEEE802标准所描述的局域网参考模型对应OSI参考模型的数据链�
 
 总线型发展到星型
 
-![以太网传输介质与拓扑结构](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/以太网传输介质与拓扑结构.JPG)
+![以太网传输介质与拓扑结构](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/以太网传输介质与拓扑结构.JPG)
 
 #### 10base-t以太网
 
-![10base-t以太网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/10base-t以太网.jpeg)
+![10base-t以太网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/10base-t以太网.jpeg)
 
 #### 适配器和mac地址
 
@@ -788,13 +788,13 @@ MAC地址：每个适配器有一个全球唯一的48位二进制地址，前24�
 
 最常用的mac帧是以太网v2的格式。(!!!再自己看看)
 
-![以太网mac帧](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/以太网mac帧.JPG)
+![以太网mac帧](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/以太网mac帧.JPG)
 
 注：数据长度范围：46-1500: 1500是mtu，最大数据传送单元，最小帧长64字节，之前有了18字节了，为了保证MAC帧是有效帧。
 
 #### 高速以太网
 
-![高速以太网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/高速以太网.JPG)
+![高速以太网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/高速以太网.JPG)
 
 ### 无线局域网WLAN
 
@@ -804,17 +804,17 @@ WIFI属于WLAN
 
 #### 802.11的mac帧头格式
 
-![80211的mac帧头格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/80211的mac帧头格式.JPG)
+![80211的mac帧头格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/80211的mac帧头格式.JPG)
 
 #### 无线局域网分类
 
 1. 有固定基础设施的无线局域网
 
-![有固定基础设施的无线局域网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/有固定基础设施的无线局域网.jpeg)
+![有固定基础设施的无线局域网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/有固定基础设施的无线局域网.jpeg)
 
 2. 无固定基础设施的无线局域网的自组织网络
 
-![无固定基础设施的无线局域网的自组织网络](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/无固定基础设施的无线局域网的自组织网络.jpeg)
+![无固定基础设施的无线局域网的自组织网络](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/无固定基础设施的无线局域网的自组织网络.jpeg)
 
 ## PPP协议，HDLC协议
 
@@ -822,7 +822,7 @@ WIFI属于WLAN
 
 广域网的通信子网使用**分组交换技术**，广域网的通信子网可以利用公用分组交换网，卫星通信网和无线分组交换网，将分布在各个地区的局域网或计算机系统互联起来，达到资源共享的目的。因特网是世界范围内最大的广域网。
 
-![广域网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/广域网.jpeg)
+![广域网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/广域网.jpeg)
 
 ### PPP协议
 
@@ -862,13 +862,13 @@ WIFI属于WLAN
 
 #### 状态图 
 
-![状态图](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/状态图.jpeg)
+![状态图](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/状态图.jpeg)
 
 #### PPP协议的帧格式
 
-![ppp协议的帧格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/PPP协议的帧格式.JPG)
+![ppp协议的帧格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/PPP协议的帧格式.JPG)
 
-![ppp协议的帧格式2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/PPP协议的帧格式2.JPG)
+![ppp协议的帧格式2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/PPP协议的帧格式2.JPG)
 
 ### HDLC协议
 
@@ -880,17 +880,17 @@ WIFI属于WLAN
 
 主战，从站，复合站
 
-![HDLC的站](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/HDLC的站.JPG)
+![HDLC的站](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/HDLC的站.JPG)
 
 #### HDLC的帧格式
 
-![hdlc的帧格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/hdlc的帧格式.JPG)
+![hdlc的帧格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/hdlc的帧格式.JPG)
 
 ### PPP协议和HDLC协议
 
 HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以实现差错检测，但不纠正差错。
 
-![ppp协议和hdlc协议](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/ppp协议和hdlc协议.JPG)
+![ppp协议和hdlc协议](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/ppp协议和hdlc协议.JPG)
 
 ## 链路层设备
 
@@ -898,13 +898,13 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 光纤（光纤调制器，光纤解调器）。集线器（集线器下的计算机们构成冲突域，只能同时有一个设备发送；主干集线器）
 
-![物理层扩展以太网](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/物理层扩展以太网.JPG)
+![物理层扩展以太网](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/物理层扩展以太网.JPG)
 
 ### 链路层扩展以太网
 
 网桥或称交换机（!!!在看看一次）
 
-![网桥交换机](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/网桥交换机.JPG)
+![网桥交换机](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/网桥交换机.JPG)
 
 把冲突域分隔开
 
@@ -914,7 +914,7 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 透明 是指以太网上的站点并不知道所发送的帧将经过哪几个网桥，是一种即插即用设备（自学习）
 
-![透明网桥转发表](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/透明网桥转发表.jpeg)
+![透明网桥转发表](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/透明网桥转发表.jpeg)
 
 
 
@@ -928,7 +928,7 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 可以独占传输媒体带宽
 
-![多接口网桥](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/多接口网桥.jpeg)
+![多接口网桥](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/多接口网桥.jpeg)
 
 ### 以太网交换机的两种交换方式
 
@@ -938,11 +938,11 @@ HDLC，PPP都只支持全双工链路，都可以实现透明传输。都可以�
 
 ### 冲突域和广播域
 
-![冲突域和广播域](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/冲突域和广播域.JPG)
+![冲突域和广播域](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/冲突域和广播域.JPG)
 
 链路域设备（交换机） 每个接口分割一个冲突域。
 
-![冲突域和广播域练习](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter03/冲突域和广播域练习.jpeg)
+![冲突域和广播域练习](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter03/冲突域和广播域练习.jpeg)
 
 4个冲突域和1个广播域
 

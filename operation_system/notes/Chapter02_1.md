@@ -41,7 +41,7 @@ PCB是进程存在的唯一标志！！！
 
 
 
-![PCB组成](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/PCB组成.jpeg)
+![PCB组成](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/PCB组成.jpeg)
 
 进程描述信息
 
@@ -53,7 +53,7 @@ PCB是进程存在的唯一标志！！！
 
 在一个系统中通常有数十数百个PCB，如何有效组织多个线程
 
-![进程的组织方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的组织方式.jpeg)
+![进程的组织方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的组织方式.jpeg)
 
 ### 链接方式
 
@@ -67,11 +67,11 @@ PCB是进程存在的唯一标志！！！
 
 建立相应功能的索引表
 
-![索引方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/索引方式.jpeg)
+![索引方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/索引方式.jpeg)
 
 ## 进程的特征
 
-![进程的基本特征](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的基本特征.jpg)
+![进程的基本特征](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的基本特征.jpg)
 
 动态性是进程最基本的特征
 
@@ -101,11 +101,11 @@ PCB是进程存在的唯一标志！！！
 
 ### 进程状态的转换
 
-![进程状态的转换](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程状态的转换.jpeg)
+![进程状态的转换](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程状态的转换.jpeg)
 
 ### 进程状态总结
 
-![进程状态总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程状态总结.jpeg)
+![进程状态总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程状态总结.jpeg)
 
 ## 进程控制
 
@@ -113,7 +113,7 @@ PCB是进程存在的唯一标志！！！
 
 即：实现**进程转换** 
 
-![进程控制1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程控制1.PNG)
+![进程控制1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程控制1.PNG)
 
 **原语**控制：用原语实现进程控制，特点是执行期间不允许中断，必须一气呵成。这种不可以被中断的操作即被称为原子操作。原语采用“关中断指令”和“开中断指令”实现。只允许在核心态下执行的特权指令。
 
@@ -133,33 +133,33 @@ PCB是进程存在的唯一标志！！！
 
 如：
 
-![进程的创建](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的创建.jpeg)
+![进程的创建](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的创建.jpeg)
 
-![进程的终止](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的终止.jpeg)
+![进程的终止](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的终止.jpeg)
 
-![进程的阻塞和唤醒](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的阻塞和唤醒.jpeg)
+![进程的阻塞和唤醒](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的阻塞和唤醒.jpeg)
 
 阻塞：运行态到阻塞态；唤醒：阻塞态到运行态
 
 阻塞原语唤醒原语必须成对使用
 
-![进程的切换](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的切换.jpeg)
+![进程的切换](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的切换.jpeg)
 
 ## 进程通信
 
-![进程通信1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程通信1.jpeg)
+![进程通信1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程通信1.jpeg)
 
 进程通信就是进程之间的信息交换，进程是分配系统资源的单位（包括内存地址空间），因此各进程拥有的内存地址空间相互独立。
 
 为了保证安全，一个进程不能直接访问另一个进程的地址空间，但是有时进程之间的通信是必要的。因此需要进程间的安全通信
 
-![进程通信2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程通信2.jpeg)
+![进程通信2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程通信2.jpeg)
 
 ### 共享存储
 
 “共享空间”但是两个进程对共享空间的访问必须是**互斥**的，
 
-![共享存储](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/共享存储.jpeg)
+![共享存储](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/共享存储.jpeg)
 
 
 共享存储分为两种：
@@ -170,7 +170,7 @@ PCB是进程存在的唯一标志！！！
 
 ### 管道通信
 
-![管道通信](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/管道通信.jpeg)
+![管道通信](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/管道通信.jpeg)
 
 管道是指用于连接读写进程的一个共享文件，又名pipe文件，其实就是在内存中开辟一个大小固定的**缓冲区**。
 
@@ -188,11 +188,11 @@ PCB是进程存在的唯一标志！！！
 
 进程之间的数据交换以格式化信息（Message）为单位，进程通过操作系统的“发送消息/接收消息“两个原语进行数据交换。
 
-![消息传递](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/消息传递.jpeg)
+![消息传递](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/消息传递.jpeg)
 
 ### 总结
 
-![进程通信总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程通信总结.jpeg)
+![进程通信总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程通信总结.jpeg)
 
 ## 线程
 
@@ -208,7 +208,7 @@ PCB是进程存在的唯一标志！！！
 
 引入线程后的变化
 
-![线程和进程1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/线程和进程1.png)
+![线程和进程1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/线程和进程1.png)
 
 ### 线程的属性
 
@@ -228,13 +228,13 @@ PCB是进程存在的唯一标志！！！
 
 	用户级线程通过线程库实现，所有的线程管理都由应用程序负责（包括线程切换）。用户级线程中，线程切换在用户态下即可完成，无需操作系统干预。在用户看来有多个线程，但是在操作系统内核看来，并意识不到线程的存在，即用户级线程对用户不透明，对操作系统透明。
 
-![用户级线程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/用户级线程.png)
+![用户级线程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/用户级线程.png)
 
 2. 内核级线程KLT（kernel-level-thread）
 
 	内核级线程管理工作由操作系统内核完成。 线程调度、切换等工作都由内核负责，因此内核级线程切换必然需要在核心态下才能完成。
 
-![内核级线程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/内核级线程.png)
+![内核级线程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/内核级线程.png)
 
 在同时支持用户级线程和内核级线程的操作系统中，采用二者组合的方式，将n个用户映射到m个内核级线程上。（n >=m )
 

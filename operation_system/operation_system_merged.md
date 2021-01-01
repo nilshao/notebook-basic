@@ -284,7 +284,7 @@ PCB是进程存在的唯一标志！！！
 
 
 
-![PCB组成](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/PCB组成.jpeg)
+![PCB组成](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/PCB组成.jpeg)
 
 进程描述信息
 
@@ -296,7 +296,7 @@ PCB是进程存在的唯一标志！！！
 
 在一个系统中通常有数十数百个PCB，如何有效组织多个线程
 
-![进程的组织方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的组织方式.jpeg)
+![进程的组织方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的组织方式.jpeg)
 
 ### 链接方式
 
@@ -310,11 +310,11 @@ PCB是进程存在的唯一标志！！！
 
 建立相应功能的索引表
 
-![索引方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/索引方式.jpeg)
+![索引方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/索引方式.jpeg)
 
 ## 进程的特征
 
-![进程的基本特征](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的基本特征.jpg)
+![进程的基本特征](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的基本特征.jpg)
 
 动态性是进程最基本的特征
 
@@ -344,11 +344,11 @@ PCB是进程存在的唯一标志！！！
 
 ### 进程状态的转换
 
-![进程状态的转换](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程状态的转换.jpeg)
+![进程状态的转换](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程状态的转换.jpeg)
 
 ### 进程状态总结
 
-![进程状态总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程状态总结.jpeg)
+![进程状态总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程状态总结.jpeg)
 
 ## 进程控制
 
@@ -356,7 +356,7 @@ PCB是进程存在的唯一标志！！！
 
 即：实现**进程转换** 
 
-![进程控制1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程控制1.PNG)
+![进程控制1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程控制1.PNG)
 
 **原语**控制：用原语实现进程控制，特点是执行期间不允许中断，必须一气呵成。这种不可以被中断的操作即被称为原子操作。原语采用“关中断指令”和“开中断指令”实现。只允许在核心态下执行的特权指令。
 
@@ -376,33 +376,33 @@ PCB是进程存在的唯一标志！！！
 
 如：
 
-![进程的创建](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的创建.jpeg)
+![进程的创建](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的创建.jpeg)
 
-![进程的终止](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的终止.jpeg)
+![进程的终止](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的终止.jpeg)
 
-![进程的阻塞和唤醒](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的阻塞和唤醒.jpeg)
+![进程的阻塞和唤醒](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的阻塞和唤醒.jpeg)
 
 阻塞：运行态到阻塞态；唤醒：阻塞态到运行态
 
 阻塞原语唤醒原语必须成对使用
 
-![进程的切换](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程的切换.jpeg)
+![进程的切换](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程的切换.jpeg)
 
 ## 进程通信
 
-![进程通信1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程通信1.jpeg)
+![进程通信1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程通信1.jpeg)
 
 进程通信就是进程之间的信息交换，进程是分配系统资源的单位（包括内存地址空间），因此各进程拥有的内存地址空间相互独立。
 
 为了保证安全，一个进程不能直接访问另一个进程的地址空间，但是有时进程之间的通信是必要的。因此需要进程间的安全通信
 
-![进程通信2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程通信2.jpeg)
+![进程通信2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程通信2.jpeg)
 
 ### 共享存储
 
 “共享空间”但是两个进程对共享空间的访问必须是**互斥**的，
 
-![共享存储](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/共享存储.jpeg)
+![共享存储](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/共享存储.jpeg)
 
 
 共享存储分为两种：
@@ -413,7 +413,7 @@ PCB是进程存在的唯一标志！！！
 
 ### 管道通信
 
-![管道通信](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/管道通信.jpeg)
+![管道通信](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/管道通信.jpeg)
 
 管道是指用于连接读写进程的一个共享文件，又名pipe文件，其实就是在内存中开辟一个大小固定的**缓冲区**。
 
@@ -431,11 +431,11 @@ PCB是进程存在的唯一标志！！！
 
 进程之间的数据交换以格式化信息（Message）为单位，进程通过操作系统的“发送消息/接收消息“两个原语进行数据交换。
 
-![消息传递](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/消息传递.jpeg)
+![消息传递](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/消息传递.jpeg)
 
 ### 总结
 
-![进程通信总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程通信总结.jpeg)
+![进程通信总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程通信总结.jpeg)
 
 ## 线程
 
@@ -451,7 +451,7 @@ PCB是进程存在的唯一标志！！！
 
 引入线程后的变化
 
-![线程和进程1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/线程和进程1.png)
+![线程和进程1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/线程和进程1.png)
 
 ### 线程的属性
 
@@ -471,13 +471,13 @@ PCB是进程存在的唯一标志！！！
 
 	用户级线程通过线程库实现，所有的线程管理都由应用程序负责（包括线程切换）。用户级线程中，线程切换在用户态下即可完成，无需操作系统干预。在用户看来有多个线程，但是在操作系统内核看来，并意识不到线程的存在，即用户级线程对用户不透明，对操作系统透明。
 
-![用户级线程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/用户级线程.png)
+![用户级线程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/用户级线程.png)
 
 2. 内核级线程KLT（kernel-level-thread）
 
 	内核级线程管理工作由操作系统内核完成。 线程调度、切换等工作都由内核负责，因此内核级线程切换必然需要在核心态下才能完成。
 
-![内核级线程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/内核级线程.png)
+![内核级线程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/内核级线程.png)
 
 在同时支持用户级线程和内核级线程的操作系统中，采用二者组合的方式，将n个用户映射到m个内核级线程上。（n >=m )
 
@@ -562,7 +562,7 @@ PCB是进程存在的唯一标志！！！
 
 进程的挂起态和七状态模型
 
-![七状态模型](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/七状态模型.png)
+![七状态模型](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/七状态模型.png)
 
 ### 低级调度
 
@@ -574,13 +574,13 @@ PCB是进程存在的唯一标志！！！
 
 ### 三层调度的联系、对比
 
-![三层调度](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/三层调度.png)
+![三层调度](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/三层调度.png)
 
 ## 进程调度的时机
 
 进程调度（低级调度），就是按照某种算法从就绪队列中选择一个进程为其分配处理机
 
-![进程调度的时机](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程调度的时机.png)
+![进程调度的时机](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程调度的时机.png)
 
 **临界资源：** 一个时间段内只允许一个进程使用的资源，各进程需要互斥地访问临界资源。
 
@@ -639,7 +639,7 @@ CPU忙碌的时间占比总时间的比例
 
 ### 带权周转
 
-![带权周转](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/带权周转.png)
+![带权周转](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/带权周转.png)
 
 对于周转时间相同的两个作业,实际运行时间长的作业在相同时间内被服务的时间更多, 带权周转时间更小,用户满意度更高
 
@@ -665,7 +665,7 @@ CPU忙碌的时间占比总时间的比例
 
 ### 总结
 
-![调度算法的评价和指标](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/调度算法的评价和指标.png)
+![调度算法的评价和指标](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/调度算法的评价和指标.png)
 
 ## 调度算法1
 
@@ -699,7 +699,7 @@ CPU忙碌的时间占比总时间的比例
 
 <!--* 例题，计算：
 
-<!--![FCFS例题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/FCFS例题.png)-->
+<!--![FCFS例题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/FCFS例题.png)-->
 
 ### 短作业优先Shortest Job First
 
@@ -719,11 +719,11 @@ CPU忙碌的时间占比总时间的比例
 
 <!--* 例题-->
 
-<!--![SJF例题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/SJF例题.png)-->
+<!--![SJF例题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/SJF例题.png)-->
 
-<!--![SRTN例题1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/SRTN例题1.png)-->
+<!--![SRTN例题1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/SRTN例题1.png)-->
 
-<!--![SRTN例题2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/SRTN例题2.png)-->
+<!--![SRTN例题2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/SRTN例题2.png)-->
 
 ### 高响应比优先Highest Response Ratio Next
 
@@ -867,7 +867,7 @@ CPU忙碌的时间占比总时间的比例
 
 把一个时间段内只允许一个进程使用的资源称为**临界资源**，对临界资源的访问必须**互斥**地执行，即同一时间段内只能允许一个进程访问该资源，对临界资源的互斥访问分为四个部分：
 
-![临界资源访问](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/临界资源访问.png)
+![临界资源访问](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/临界资源访问.png)
 
 注意:
 * **进入区** 负责检查是否可进入临界区,若可进入,则应设置正在问临界资源的标志(可理解为 **“上锁”**),以阻止其他进程同时进入临界区
@@ -890,7 +890,7 @@ CPU忙碌的时间占比总时间的比例
 
 ### 总结
 
-![进程互斥总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程互斥总结.jpeg)
+![进程互斥总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程互斥总结.jpeg)
 
 ## 进程互斥的软件实现
 
@@ -905,7 +905,7 @@ CPU忙碌的时间占比总时间的比例
 
 思想：两个进程在访问完临界区后会把使用临界区的权限转交给另一个进程，也就是说每一个进程进入临界区的权限只能被另一个进程赋予。
 
-![单标志法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/单标志法.png)
+![单标志法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/单标志法.png)
 
 这种必须“轮流访问”带来的问题是,如果此时允许进入临界区的进程是PO,而PO一直不访问临界 区,那么虽然此时临界区空闲,但是并不允许P1访问。**违背了空闲让进原则。**
 
@@ -913,7 +913,7 @@ CPU忙碌的时间占比总时间的比例
 
 思想：设置一个布尔型数组flag[]，数组中各个元素用来标记各进程想进入临界区的意愿，比如flag[0]=true标识0号进程现在想要进入临界区。每个进程进入临界区之前先检查当前有没有别的进程想要进入临界区，如果没有，则把自己对应的标志flag[i]设置为true，之后开始访问临界区。
 
-![双标志先检查法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/双标志先检查法.png)
+![双标志先检查法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/双标志先检查法.png)
 
 有可能多个进程**同时访问到临界区**：进入区的“检查”和“上锁”两个处理不是一气呵成的，“检查”后，“上锁”前可能发生进程切换。**违反“忙则等待”原则**
 
@@ -921,7 +921,7 @@ CPU忙碌的时间占比总时间的比例
 
 改进双标志先检查法，前一个算法的问题时先检查后上锁，但是这两个操作没法一气呵成，因此可能两个进程同时进入临界区，所以可以先上锁后检查
 
-![双标志后检查法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/双标志后检查法.png)
+![双标志后检查法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/双标志后检查法.png)
 
 但是违反了空闲让进和有限等待，两个进程都想进入临界区但是互不相让，可能会产生饥饿现象。
 
@@ -929,7 +929,7 @@ CPU忙碌的时间占比总时间的比例
 
 双标志后检查算法中，两个算法互相争抢，Peterson算法中，如果双方都争着想进入临界区，那可以让进程主动让对方先使用临界区
 
-![peterson算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/peterson算法.png)
+![peterson算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/peterson算法.png)
 
 遵循了空闲让进，忙则等待，有限等待，但是没有遵循**让权等待**
 
@@ -949,7 +949,7 @@ CPU忙碌的时间占比总时间的比例
 
 用硬件实现的，执行的过程中不允许被中断，只能一气呵成，
 
-![testandset](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/testandset.png)
+![testandset](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/testandset.png)
 
 若刚开始lock是false,则TSL返回的old值为 false, while循环条件不满足,直接跳过循环,进入临界区。若刚开始lock是true,则执行TLS后old返回的值为true, while循环条件满足,会一直循环,直到当前访问临界区的进程在退出区进行“解锁”。
 
@@ -964,7 +964,7 @@ CPU忙碌的时间占比总时间的比例
 
 Swap指令是用硬件实现的,执行的过程不允许被中断,只能一气呵成。以下是用C语言描述的逻辑
 
-![Swap指令](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/Swap指令.png)
+![Swap指令](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/Swap指令.png)
 
 逻辑上来看Swap和TSL并无太大区别,都是先记录下此时临界区是否已经被上锁(记录在old变量上),再将上锁标记lock设置为true,最后检查old,如果old为false则说明之前没有别的进程对临界区上锁,则可跳出循环,进入临界区。
 
@@ -974,7 +974,7 @@ Swap指令是用硬件实现的,执行的过程不允许被中断,只能一气�
 
 ### 总结
 
-![进程互斥的硬件实现总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/进程互斥的硬件实现总结.png)
+![进程互斥的硬件实现总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/进程互斥的硬件实现总结.png)
 
 ## 信号量机制
 
@@ -996,7 +996,7 @@ wait(S)和signal(S)是自己写的函数，S就是信号量
 
 整形信号量，用来表示系统中某种资源的数量，如系统中有一台计算机 S为1
 
-![整形信号量](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/整形信号量.png)
+![整形信号量](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/整形信号量.png)
 
 对信号量的操作只有三种：初始化，P操作和V操作
 
@@ -1008,7 +1008,7 @@ wait(S)和signal(S)是自己写的函数，S就是信号量
 
 用记录型数据结构表示的信号量
 
-![记录型信号量](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/记录型信号量.png)
+![记录型信号量](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/记录型信号量.png)
 
 释放资源后，若还有别的进程在等待这种资源，则使用wakeup原语唤醒等待队列中的一个进程，该进程从阻塞态变为就绪态
 
@@ -1037,11 +1037,11 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 信号量机制实现前驱关系
 
-![信号量机制实现前驱关系](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/信号量机制实现前驱关系.png)
+![信号量机制实现前驱关系](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/信号量机制实现前驱关系.png)
 
 ### 信号量机制实现各种操作总结
 
-![信号量机制实现各种操作总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/信号量机制实现各种操作总结.png)
+![信号量机制实现各种操作总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/信号量机制实现各种操作总结.png)
 
 ## 生产者消费者问题
 
@@ -1097,7 +1097,7 @@ S.value的初值表示系统中某种资源的数目。
 
 3. 每次仅允许一个进程在管程内执行某个内部过程
 
-![用管程解决生产者消费者问题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/用管程解决生产者消费者问题.png)
+![用管程解决生产者消费者问题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/用管程解决生产者消费者问题.png)
 
 由编译器负责实现各进程互斥地进入管程中的过程
 
@@ -1107,11 +1107,11 @@ S.value的初值表示系统中某种资源的数目。
 
 2. 需要在管程中定义用于访问这些共享数据的“入口”————其实就是一些函数
 
-![管程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/管程.png)
+![管程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/管程.png)
 
 ### 管程总结
 
-![管程总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/管程总结.png)
+![管程总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/管程总结.png)
 
 # 第二章 第四节 死锁
 
@@ -1203,7 +1203,7 @@ S.value的初值表示系统中某种资源的数目。
 
 原理：一个进程只有已经占有小编号的资源时，才有资格申请更大编号的资源。按此规则,已持有大编号资源的进程不可能逆向地回来申请小编号的资源,从而就不会产生循环等待的现象。
 
-![破坏循环等待条件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/破坏循环等待条件.png)
+![破坏循环等待条件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/破坏循环等待条件.png)
 
 
 缺点：
@@ -1230,9 +1230,9 @@ S.value的初值表示系统中某种资源的数目。
 
 在资源分配之前就先预先判断这次分配是否会导致系统进入不安全状态，如果会进入不安全状态，就暂时不答应这次请求，让该进程先阻塞等待。
 
-![银行家算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/银行家算法.png)
+![银行家算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/银行家算法.png)
 
-![银行家算法2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/银行家算法2.png)
+![银行家算法2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/银行家算法2.png)
 
 
 ## 死锁的检测和解除
@@ -1253,11 +1253,11 @@ S.value的初值表示系统中某种资源的数目。
 
 2. 提供一种算法，利用上述信息来检测系统是否已进入死锁状态
 
-![死锁的检测1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/死锁的检测1.png)
+![死锁的检测1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/死锁的检测1.png)
 
-![死锁的检测2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/死锁的检测2.png)
+![死锁的检测2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/死锁的检测2.png)
 
-![死锁的检测3](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter2/死锁的检测3.png)
+![死锁的检测3](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter2/死锁的检测3.png)
 
 ### 死锁的解除
 
@@ -1313,18 +1313,18 @@ S.value的初值表示系统中某种资源的数目。
 如果”按字编址“，每个存储单元大小为1个字，字长十六位的计算机中每个字的大小为16个二进制位。
 
 
-![内存介绍1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/内存介绍1.jpeg)
+![内存介绍1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/内存介绍1.jpeg)
 
 ## 进程的运行原理：指令
 
-![指令](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/指令.jpeg)
+![指令](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/指令.jpeg)
 
 相对地址=逻辑地址，绝对地址=物理地址
 
 
 ## 从写程序到运行
 
-![从写程序到运行](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/从写程序到运行.jpeg)
+![从写程序到运行](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/从写程序到运行.jpeg)
 
 装入模块中的地址指的是“相对地址”，但是装入模块装入内存时，需要对指令中的地址进行处理。装入的三种方式（由三种不同的方法完成逻辑地址到物理地址的转换）：
 
@@ -1370,13 +1370,13 @@ S.value的初值表示系统中某种资源的数目。
 
 ## 内存空间的扩充：覆盖和交换
 
-![覆盖和交换](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/覆盖和交换.jpeg)
+![覆盖和交换](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/覆盖和交换.jpeg)
 
 ### 覆盖技术
 
 思想：把程序分为多个段（多个模块）。常用的段常驻内存，不常用的段在需要时放入内存。需要常驻内存的段放在固定区，不常用的段放在覆盖区。内存中分为一个固定区和多个覆盖区。
 
-![覆盖技术](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/覆盖技术.jpeg)
+![覆盖技术](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/覆盖技术.jpeg)
 
 ### 交换技术
 
@@ -1397,7 +1397,7 @@ S.value的初值表示系统中某种资源的数目。
 
 （补全文字）
 
-![交换技术](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/交换技术.jpeg)
+![交换技术](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/交换技术.jpeg)
 
 1. 具有兑换功能的操作系统中，通常把磁盘空间分为文件区和对换区
 
@@ -1413,7 +1413,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 单一连续分配
 
-![单一连续分配](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/单一连续分配.jpeg)
+![单一连续分配](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/单一连续分配.jpeg)
 
 
 ### 固定分区分配
@@ -1462,7 +1462,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 动态分区分配算法
 
-![动态分区分配算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/动态分区分配算法.jpeg)
+![动态分区分配算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/动态分区分配算法.jpeg)
 
 1. 首次适应算法
 
@@ -1489,7 +1489,7 @@ S.value的初值表示系统中某种资源的数目。
 
 比较：
 
-![动态分区分配算法比较](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/动态分区分配算法比较.jpeg)
+![动态分区分配算法比较](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/动态分区分配算法比较.jpeg)
 
 
 
@@ -1523,7 +1523,7 @@ S.value的初值表示系统中某种资源的数目。
 
 为了能知道进程的每个页面在内存中存放的位置，操作系统要为每个进程建立一张页表
 
-![页表](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页表.jpeg)
+![页表](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页表.jpeg)
 
 每个页表项的长度是相同的，页号是隐含的。（说不明白就不要说）
 
@@ -1535,10 +1535,10 @@ S.value的初值表示系统中某种资源的数目。
 
 进程未执行时，页表的起始地址和页表长度放在进程控制模块PCB中，进程被调度时，操作系统内核会把它们放到页表寄存器中。
 
-![基本地址变换机构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/基本地址变换机构.png)
+![基本地址变换机构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/基本地址变换机构.png)
 
  
-![基本地址变换机构总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/基本地址变换机构总结.png)
+![基本地址变换机构总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/基本地址变换机构总结.png)
 
 ## 具有快##表的地址变换结构
 
@@ -1554,24 +1554,24 @@ S.value的初值表示系统中某种资源的数目。
 
 又称**联想寄存器**，是一种访问速度比内存快很多的高速缓冲存储器，用来存放当前访问的若干页表项，以加速地址变换的过程。与此相对，**内存**中的页表称为慢表。
 
-![快表TLB](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/快表TLB.jpeg)
+![快表TLB](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/快表TLB.jpeg)
 
 
 快表中存放的是页表的一部分副本，若快表命中就不需要再访问内存。
 
 ### 引入快表之后，地址的变换过程
 
-![引入快表之后地址的变换过程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/引入快表之后地址的变换过程.jpeg)
+![引入快表之后地址的变换过程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/引入快表之后地址的变换过程.jpeg)
 
 ### 总结
 
-![快表总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/快表总结.jpeg)
+![快表总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/快表总结.jpeg)
 
 ## 两级页表
 
 ### 单级页表的问题
 
-![单级页表的问题](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/单级页表的问题.jpeg)
+![单级页表的问题](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/单级页表的问题.jpeg)
 
 根据局部性原理，很多时候进程在一段时间内只需要访问某几个页面就可以正常运行了，没有必要让整个页表都常驻内存。
 
@@ -1601,7 +1601,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 总结
 
-![两级页表总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/两级页表总结.jpeg)
+![两级页表总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/两级页表总结.jpeg)
 
 ## 基本分段存储管理
 
@@ -1611,12 +1611,12 @@ S.value的初值表示系统中某种资源的数目。
 
 段表：段的映射表
 
-![分段分页](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/分段分页.jpeg)
+![分段分页](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/分段分页.jpeg)
 
 而且：
 分段比分页更容易实现信息的共享和保护
 
-![分段分页2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/分段分页2.jpeg)
+![分段分页2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/分段分页2.jpeg)
 
 页是信息的物理单位。分页的主要目的是为了实现离散分配,提高内存利用率。分页仅仅是系统管 理上的需要,完全是系统行为,对用户是不可见的。
 段是信息的逻辑单位。分页的主要目的是更好地满足用户需求。一个段通常包含着一组属于一个逻 辑模块的信息。分段对用户是可见的,用户编程时需要显式地给出段名。 页的大小固定且由系统决定。段的长度却不固定,决定于用户编写的程序。 分页的用户进程地址空间是一维的,程序员只需给出一个记忆符即可表示一个地址
@@ -1628,7 +1628,7 @@ S.value的初值表示系统中某种资源的数目。
 
 分段:第一次访存ー一査内存中的段表,第二次访存一一访问目标内存单元。总共两次访存。与分页系统类似,分段系统中也可以引入快表机构,将近期访问过的段表项放到快表中,这样可以少一次访问,加快地址变换速度。
 
-![分段总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/分段总结.png)
+![分段总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/分段总结.png)
 
 ## 段页式管理
 
@@ -1637,9 +1637,9 @@ S.value的初值表示系统中某种资源的数目。
 
 
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/.jpeg)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/.jpeg)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/.png)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/.png)
 
 
 
@@ -1649,11 +1649,11 @@ S.value的初值表示系统中某种资源的数目。
 
 内存空间的扩充：覆盖技术，交换技术，**虚拟存储技术**
 
-![虚拟存储技术](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/虚拟存储技术.jpeg)
+![虚拟存储技术](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/虚拟存储技术.jpeg)
 
 ## 传统存储管理方式的特征、缺点
 
-![传统存储管理方式的特征缺点](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/传统存储管理方式的特征缺点.jpeg)
+![传统存储管理方式的特征缺点](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/传统存储管理方式的特征缺点.jpeg)
 
 * 一次性：作业必须一次性全部装入内存后才能运行，造成两个问题
   * 作业很大时，不能全部装入内存，这样就导致大作业无法运行
@@ -1671,7 +1671,7 @@ S.value的初值表示系统中某种资源的数目。
 
 **如何应用**局部性原理：**高速缓冲技术**，将近期会频繁访问的数据放到更高速的存储器中，暂时用不到的放在更低速的存储器中。
 
-![计算机中存储器的层次结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/计算机中存储器的层次结构.jpeg)
+![计算机中存储器的层次结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/计算机中存储器的层次结构.jpeg)
 
 （快表机构可以将近期经常访问的页表项副本放到更高速的联想寄存器中）基于局部性原理：
 * 在程序装入时，把程序中很快用到的部分装入内存，暂时用不到的放到外存。  
@@ -1707,7 +1707,7 @@ S.value的初值表示系统中某种资源的数目。
 
 相似：
 
-![如何实现虚拟内存技术](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/如何实现虚拟内存技术.jpeg)
+![如何实现虚拟内存技术](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/如何实现虚拟内存技术.jpeg)
 
 区别：
 
@@ -1727,22 +1727,22 @@ S.value的初值表示系统中某种资源的数目。
     
     即：操作系统提供**页面置换功能**，将暂时用不到的页面换出到外存。
 
-![请求分页管理方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/请求分页管理方式.jpeg)
+![请求分页管理方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/请求分页管理方式.jpeg)
 
 ### 页表机制
 
-![页表机制](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页表机制.jpeg)
+![页表机制](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页表机制.jpeg)
 
 ### 缺页中断机构
 
-![缺页中断机构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/缺页中断机构.jpeg)
+![缺页中断机构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/缺页中断机构.jpeg)
 
-![缺页中断机构2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/缺页中断机构2.jpeg)
+![缺页中断机构2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/缺页中断机构2.jpeg)
 
 
 ### 地址变换机构
 
-![地址变换机构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/地址变换机构.png)
+![地址变换机构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/地址变换机构.png)
 
 新增步骤：
 
@@ -1750,9 +1750,9 @@ S.value的初值表示系统中某种资源的数目。
 2. 页面置换（需要时调入页面，但没有空闲内存块时进行
 3. 需要修改请求页表中新增的表项
 
-![地址变换机构2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/地址变换机构2.png)
+![地址变换机构2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/地址变换机构2.png)
 
-![请求分页中的地址变换过程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/请求分页中的地址变换过程.png)
+![请求分页中的地址变换过程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/请求分页中的地址变换过程.png)
 
 在具有快表机构的请求分页系统中，访问一个逻辑地址时，若发生缺页，则地址变换步骤：
 
@@ -1760,19 +1760,19 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 总结
 
-![请求分页管理方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/请求分页管理方式.png)
+![请求分页管理方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/请求分页管理方式.png)
 
 ## 页面置换算法
 
 回忆：”若内存空间不够，操作系统负责将内存中暂时用不到的信息换出到外存“ ————由页面置换算法来决定应该换出哪个页面
 
-![页面置换算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页面置换算法.png)
+![页面置换算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页面置换算法.png)
 
 由于页面的换入和换出需要磁盘I/O，会有较大的开销，因此好的页面置换算法应该追求更少的缺页率
 
 ### 最佳置换算法OPT
 
-![最佳置换算法OPT](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/最佳置换算法OPT.png)
+![最佳置换算法OPT](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/最佳置换算法OPT.png)
 
 整个过程**缺页中断**发生了**9**次，**页面置换**发生了**6**次。缺页时未必发生页面置换，若还有可用的空闲内存块，就不用进行页面置换。
 
@@ -1782,7 +1782,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 先进先出置换算法FIFO
 
-![先进先出置换算法FIFO](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/先进先出置换算法FIFO.png)
+![先进先出置换算法FIFO](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/先进先出置换算法FIFO.png)
 
 缺页次数9
 
@@ -1793,29 +1793,29 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 最近最久未使用置换算法LRU
 
-![最近最久未使用置换算法LRU](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/最近最久未使用置换算法LRU.png)
+![最近最久未使用置换算法LRU](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/最近最久未使用置换算法LRU.png)
 
 该算法实现需要专门的硬件支持，虽然算法性能好，但是实现困难，开销大
 
 ### 时钟置换算法CLOCK
 
-![时钟置换算法CLOCK](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/时钟置换算法CLOCK.png)
+![时钟置换算法CLOCK](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/时钟置换算法CLOCK.png)
 
 ### 改进型的时钟置换算法，也叫“二次机会法”
 
-![改进型的时钟置换算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/改进型的时钟置换算法.png)
+![改进型的时钟置换算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/改进型的时钟置换算法.png)
 
 优先级：
 
-![改进型的时钟置换算法优先级](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/改进型的时钟置换算法优先级.png)
+![改进型的时钟置换算法优先级](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/改进型的时钟置换算法优先级.png)
 
 ### 总结
 
-![改进型的时钟置换算法总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/改进型的时钟置换算法总结.png)
+![改进型的时钟置换算法总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/改进型的时钟置换算法总结.png)
 
 ## 页面分配策略
 
-![页面分配策略](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页面分配策略.png)
+![页面分配策略](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页面分配策略.png)
 
 ### 驻留集
 
@@ -1846,7 +1846,7 @@ S.value的初值表示系统中某种资源的数目。
 
 **固定分配局部置换**：系统为每个进程分配一定数量的物理块，在整个运行期间都不改变，若进程在运行中发生缺页
 
-![页面分配置换策略](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页面分配置换策略.jpeg)
+![页面分配置换策略](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页面分配置换策略.jpeg)
 
 可变分配全局置换：只要缺页就给分配新物理块
 
@@ -1860,13 +1860,13 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 从何处调入页面
 
-![外存](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/外存.jpeg)
+![外存](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/外存.jpeg)
 
-![对换区](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/对换区.jpeg)
+![对换区](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/对换区.jpeg)
 
-![文件区](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/文件区.jpeg)
+![文件区](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/文件区.jpeg)
 
-![UNIX方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/UNIX方式.jpeg)
+![UNIX方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/UNIX方式.jpeg)
 
 ### 抖动、颠簸现象
 
@@ -1881,14 +1881,14 @@ S.value的初值表示系统中某种资源的数目。
 **驻留集：** 指请求分页存储管理中给进程分配的内存块的集合。
 **工作集：** 指在某段时间间隔里，进程实际访问页面的集合。
 
-![工作集](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/工作集.png)、
+![工作集](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/工作集.png)、
 工作集大小可能小于窗口尺寸,实际应用中,操作系统可以统计进程的工作集大小,根据工作集大小给进程分配若干内存块。如:窗口尺寸为5,经过一段时间的监测发现某进程的工作集最大为3,那么说明该进程有很好的局部性,可以给这个进程分配3个以上的内存块即可满足进程的运行需要。
 
 一般来说,驻留集大小不能小于工作集大小,否则进程运行过程中将频繁缺页。
 
 拓展:基于局部性原理可知,进程在一段时间内访问的页面与不久之后会访问的页面是有相关性的。因此,可以根据进程近期访问的页面集合(工作集)来设计一种页面置换算法ー一选择一个不在工作集中的页面进行淘汰。
 
-![页面分配策略总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter3/页面分配策略总结.png)
+![页面分配策略总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter3/页面分配策略总结.png)
 # 第四章 第一节 
 
 ## 文件管理简介
@@ -1916,7 +1916,7 @@ S.value的初值表示系统中某种资源的数目。
 
 有结构文件
 
-![文件组织结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件组织结构.png)
+![文件组织结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件组织结构.png)
 
 ### 文件之间的组织
 
@@ -1948,7 +1948,7 @@ S.value的初值表示系统中某种资源的数目。
 
 又称记录式文件，由一组相似的记录组成，每一条记录又由若干个数据项组成。一般来说每条记录又一个数据项可以作为关键字，根据各条记录长度又可以分为定长记录和可变长记录。
 
- ![有结构文件逻辑结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/有结构文件逻辑结构.png)
+ ![有结构文件逻辑结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/有结构文件逻辑结构.png)
 
 
 
@@ -1961,7 +1961,7 @@ S.value的初值表示系统中某种资源的数目。
 
 能否随机存取，快速查找：
 
-![顺序文件随机存取快速查找](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/顺序文件随机存取快速查找.png)
+![顺序文件随机存取快速查找](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/顺序文件随机存取快速查找.png)
 
 
 ### 索引文件
@@ -1976,7 +1976,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ## 文件目录
 
-![文件目录](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件目录.png)
+![文件目录](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件目录.png)
 
 ### 文件控制块FCB
 
@@ -2009,7 +2009,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 索引结点（FCB的改进）
 
- ![索引结点](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/索引结点.png)
+ ![索引结点](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/索引结点.png)
 
 除了文件名之外的所有信息都放在索引结点中，每个文件对应一个索引结点，目录项中只包含文件名，索引结点指针，因此每个目录项的长度大幅减小
 
@@ -2017,7 +2017,7 @@ S.value的初值表示系统中某种资源的数目。
 
 文件数据如何存放在外存中？对非空闲磁盘块的管理（存放了文件数据的磁盘块），对空闲磁盘块的管理
 
- ![文件的分配方式](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件的分配方式.png)
+ ![文件的分配方式](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件的分配方式.png)
 
 文件的逻辑地址被分为了一个一个的块，因此文件的逻辑地址也可以表示为 逻辑块号，块内地址。
 
@@ -2043,7 +2043,7 @@ S.value的初值表示系统中某种资源的数目。
 
 用户给出要访问的逻辑块号，操作系统找到该文件对应的目录项。访问速度比较快。 
 
-![链接分配总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/链接分配总结.png)
+![链接分配总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/链接分配总结.png)
 
 ### 索引分配
 
@@ -2061,17 +2061,17 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 总结
 
-![总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/总结.png)
+![总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/总结.png)
 
 ## 文件存储空间管理
 
-![文件存储空间管理](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件存储空间管理.png)
+![文件存储空间管理](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件存储空间管理.png)
 
 ### 存储空间的划分和初始化
 
 将物理磁盘分为一个个文件卷
 
-![存储空间的划分和初始化](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/存储空间的划分和初始化.png)
+![存储空间的划分和初始化](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/存储空间的划分和初始化.png)
 
 ### 存储空间管理：空闲表法
 
@@ -2089,7 +2089,7 @@ S.value的初值表示系统中某种资源的数目。
 
 ### 存储空间管理：位示图法
 
-![位示图法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/位示图法.png)
+![位示图法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/位示图法.png)
 
 0代表盘块空闲，1表示以分配
 
@@ -2101,7 +2101,7 @@ linux采用的管理方式。
 
 ### 总结
 
-![存储空间管理总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/存储空间管理总结.png)
+![存储空间管理总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/存储空间管理总结.png)
 
 ## 文件的基本操作
 
@@ -2109,35 +2109,35 @@ linux采用的管理方式。
 
 ### 创建文件：
 
-![创建文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/创建文件.png)
+![创建文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/创建文件.png)
 
 ### 删除文件
 
-![删除文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/删除文件.png)
+![删除文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/删除文件.png)
 
 ### 写文件
 
-![写文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/写文件.png)
+![写文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/写文件.png)
 
 ### 打开文件
 
-![打开文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/打开文件.png)
+![打开文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/打开文件.png)
 
 ### 关闭文件
 
-![关闭文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/关闭文件.png)
+![关闭文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/关闭文件.png)
 
 ### 读文件
 
-![读文件](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/读文件.png)
+![读文件](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/读文件.png)
 
 ### 总结
 
-![文件操作总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件操作总结.png)
+![文件操作总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件操作总结.png)
 
 ## 文件共享
 
-![文件共享](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件共享.png)
+![文件共享](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件共享.png)
 
 ### 基于索引的共享方式
 
@@ -2149,7 +2149,7 @@ linux采用的管理方式。
 
 快捷方式，链接一个路径信息
 
-![文件共享总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件共享总结.png)
+![文件共享总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件共享总结.png)
 
 ## 文件保护
 
@@ -2167,18 +2167,18 @@ linux采用的管理方式。
 
 为文件设置密码。如异或加密。
 
-![加密保护](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/加密保护.png)
+![加密保护](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/加密保护.png)
 
 ### 访问控制
 
 在每个文件的fcb或索引结点增加一个访问控制表（access control list），该表中记录了每个用户可以对该文件执行哪些操作（权限）。
 
-![文件保护总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件保护总结.png)
+![文件保护总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件保护总结.png)
 
 
 ## 文件系统的层次结构
 
-![文件系统的层次结构](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/文件系统的层次结构.png)
+![文件系统的层次结构](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/文件系统的层次结构.png)
 # 第四章 第二节 磁盘
 
 ## 磁盘的结构
@@ -2195,7 +2195,7 @@ linux采用的管理方式。
 
 磁盘的物理地址：柱面号，盘面号，扇区号。
 
-![磁盘的物理地址](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/磁盘的物理地址.jpeg)
+![磁盘的物理地址](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/磁盘的物理地址.jpeg)
 
 ### 磁盘的分类
 
@@ -2205,7 +2205,7 @@ linux采用的管理方式。
 
 ## 磁盘调度算法
 
-![磁盘调度算法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/磁盘调度算法.jpeg)
+![磁盘调度算法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/磁盘调度算法.jpeg)
 
 ### 一次磁盘读写操作的时间：
 
@@ -2250,7 +2250,7 @@ SCAN算法对于各个位置磁道的响应频率不均，C-SCAN只在磁头朝�
 
 ### 总结
 
-![磁盘调度算法总结](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/磁盘调度算法总结.jpeg)
+![磁盘调度算法总结](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/磁盘调度算法总结.jpeg)
 
 ## 减少延迟时间的方法
 
@@ -2268,7 +2268,7 @@ SCAN算法对于各个位置磁道的响应频率不均，C-SCAN只在磁头朝�
 
 ### 总结
 
-![减少延迟时间的方法](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter4/减少延迟时间的方法.jpeg)
+![减少延迟时间的方法](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter4/减少延迟时间的方法.jpeg)
 
 ## 磁盘的管理
 
@@ -2312,28 +2312,28 @@ Unix系统将外部设备抽象为一种特殊的文件，用户可以使用与�
 
 接受和识别cpu发出的指令，向CPU报告设备的状态，数据交换，地址识别。
 
-![io控制器的功能](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/io控制器的功能.jpeg)
+![io控制器的功能](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/io控制器的功能.jpeg)
 
 ### IO控制器的组成
 
 IO控制器和CPU的接口，IO逻辑，控制器和设备的接口。
 
-![IO控制器的组成](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/IO控制器的组成.jpeg)
+![IO控制器的组成](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/IO控制器的组成.jpeg)
 
 
 
 
 
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.jpeg)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.jpeg)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.jpg)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.jpg)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.JPG)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.JPG)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.png)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.png)
 
-![](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter5/.PNG)
+![](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter5/.PNG)
 
 
 

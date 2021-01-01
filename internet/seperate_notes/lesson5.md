@@ -17,7 +17,7 @@
 两个协议：TCP（靠谱），UDP（不靠谱）
 （文字补一下）（图片——
 
-![传输层两个协议简介](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/传输层两个协议简介.png)
+![传输层两个协议简介](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/传输层两个协议简介.png)
 
 + TCP：面向连接的传输控制协议：要先建立连接。可靠，面向连接，时延大，适用于大文件
 
@@ -35,9 +35,9 @@
 
 端口长度有16bit，能表示65536个不同的端口号
 
-![传输层的寻址与端口1](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/传输层的寻址与端口1.png)
+![传输层的寻址与端口1](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/传输层的寻址与端口1.png)
 
-![传输层的寻址与端口2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/传输层的寻址与端口2.png)
+![传输层的寻址与端口2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/传输层的寻址与端口2.png)
 
 在网络中采用发送方和接收方的套接字组合来识别端点，套接字唯一标识了网络中的一个主机和它上面的一个进程。
 
@@ -59,7 +59,7 @@ UDP的主要特点：
 
     应用层产生应用层报文 -> 传输层
 
-    ![UDP概述](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP概述.png)
+    ![UDP概述](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP概述.png)
 
     应用层给udp多长的报文，udp就照样发送，一次发一个完整报文
 
@@ -79,7 +79,7 @@ UDP检验和：检测整个udp数据报是否有错，错就丢弃
 
 分用时，找不到对应目的端口号，就丢弃报文，并给发送方发送ICMP“端口不可达”的差错报文
 
-![UDP报文首部格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP报文首部格式.png)
+![UDP报文首部格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP报文首部格式.png)
 
 ### UDP校验
 
@@ -89,11 +89,11 @@ UDP检验和：检测整个udp数据报是否有错，错就丢弃
 
 udp长度：udp首部8B+数据部分长度（不包括伪首部）
 
-![UDP校验伪首部](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP校验伪首部.png)
+![UDP校验伪首部](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP校验伪首部.png)
 
 ### （用伪首部）进行UDP校验
 
-![UDP校验2](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/UDP校验2.png)
+![UDP校验2](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/UDP校验2.png)
 
 
 ## TCP协议
@@ -118,7 +118,7 @@ udp长度：udp首部8B+数据部分长度（不包括伪首部）
 
 ### TCP报文段首部格式
 
-![TCP报文首部格式](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/TCP报文首部格式.png)
+![TCP报文首部格式](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/TCP报文首部格式.png)
 
 序号：在一个TCP连接中传送的**字节流**中的每一个字节都按顺序编号,
 本字段表示本报文段所发送数据的第一个字节的序号。
@@ -167,7 +167,7 @@ TCP连接的建立采用客户服务器方式，主动发动 连接建立的应�
 
 三次握手：
 
-![三次握手](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/三次握手.png)
+![三次握手](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/三次握手.png)
 
 ROUND1: 客户端发送连接请求报文段，**无应用层数据**
     SYN=1，seq=x
@@ -180,7 +180,7 @@ ROUND3: 客户端为该TCP连接**分配缓存和变量**，并向服务器端�
 
 SYN洪范攻击：
 
-![SYN洪范攻击](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/SYN洪范攻击.png)
+![SYN洪范攻击](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/SYN洪范攻击.png)
 
 解决办法：设置SYN Cookie（了解）
 
@@ -188,7 +188,7 @@ SYN洪范攻击：
 
 参与一条TCP的两个进程中的任何一个都能终止该链接，连接结束后，主机中的“资源”（缓存和变量）将被释放。
 
-![四次握手](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/四次握手.png)
+![四次握手](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/四次握手.png)
 
 ROUND1: 客户端发送连接释放报文段，停止发送数据，主动关闭TCP连接。
 FIN=1，seq=u
@@ -225,7 +225,7 @@ TCP实现可靠传输的机制：校验，序号，确认，重传
 
 ### TCP流量控制
 
-![TCP流量控制](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/TCP流量控制.png)
+![TCP流量控制](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/TCP流量控制.png)
 
 让发送方发慢点，让接收方来得及接收。
 
@@ -265,7 +265,7 @@ TCP为每一个连接设有一个持续计时器，只要tcp连接的一方收�
 
 + 慢开始和拥塞避免算法
 
-![慢开始](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/慢开始.png)
+![慢开始](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/慢开始.png)
 
 
 拥塞窗口以一个报文段长度MSS为单位。
@@ -283,6 +283,6 @@ ssthresh：slow start threshold 慢开始阈值。加法增大以拥塞避免。
 
 + 快重传和快恢复：
 
-![快重传和快恢复](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter05/快重传和快恢复.png)
+![快重传和快恢复](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter05/快重传和快恢复.png)
 
 快恢复不用从慢开始的1个报文段大小开始，而是直接从新的ssthresh。
