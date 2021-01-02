@@ -12,7 +12,7 @@
 
 ## 操作系统的功能和目标
 
-![操作系统介绍1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/操作系统介绍1.jpeg)
+![操作系统介绍1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/操作系统介绍1.jpeg)
 
 1. 操作系统作为系统资源的管理者，包括软件，硬件，文件等，需要提供什么功能？
 
@@ -25,7 +25,7 @@
 进程是一个程序的执行过程，执行前需要将该程序放到内存中，才能被CPU处理。
 
 
-![系统资源管理1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/系统资源管理1.jpeg)
+![系统资源管理1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/系统资源管理1.jpeg)
 
 例子：QQ聊天
 
@@ -39,11 +39,11 @@
 
 ### 2.作为用户与计算机硬件之间的接口
 
-![作为用户与计算机硬件之间的接口](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/作为用户与计算机硬件之间的接口.jpeg)
+![作为用户与计算机硬件之间的接口](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/作为用户与计算机硬件之间的接口.jpeg)
 
 用户接口：
 
-![用户接口](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/用户接口.jpeg)
+![用户接口](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/用户接口.jpeg)
 
 联机命令接口：windows中win+R
 
@@ -155,18 +155,18 @@ CPU如何判断当前是否可以执行特权指令？规定两种处理器状�
 
 ### 操作系统的内核
 
-![操作系统的内核](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/操作系统的内核.png)
+![操作系统的内核](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/操作系统的内核.png)
 
 内核是计算机上配置的底层**软件**，是操作系统最基本、最核心的部分，实现操作系统内核功能的那些程序就是内核程序
 
-![操作系统的内核程序](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/操作系统的内核程序.png)
+![操作系统的内核程序](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/操作系统的内核程序.png)
 
 
 ### 操作系统的体系结构
 
 大内核和微内核
 
-![大内核和微内核](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/大内核和微内核.png)
+![大内核和微内核](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/大内核和微内核.png)
 
 ## 中断和异常
 
@@ -192,16 +192,16 @@ CPU如何判断当前是否可以执行特权指令？规定两种处理器状�
 
 两种分类方式
 
-![中断的分类1](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/中断的分类1.png)
+![中断的分类1](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/中断的分类1.png)
 
 另一种分类方式：
 
-![中断的分类2](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/中断的分类2.png)
+![中断的分类2](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/中断的分类2.png)
 
 
 ### 外中断的处理过程
 
-![外中断的处理过程](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/外中断的处理过程.png)
+![外中断的处理过程](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/外中断的处理过程.png)
 
 **Step1:** 执行完每个指令之后,CPU都要检查当前是否有外部中断信号
 **Step2:** 如果检测到外部中断信号,则需要保护被中断进程的CPU环境(如程序状态字PSW、程序计数器PC、各种通用寄存器)
@@ -221,11 +221,11 @@ CPU如何判断当前是否可以执行特权指令？规定两种处理器状�
 
 系统调用相关处理涉及到对系统资源的管理，对进程的控制等，这些功能需要一些特权指令才能完成，因此系统调用的相关处理需要在核心态下进行
 
-![系统调用](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/系统调用.png)
+![系统调用](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/系统调用.png)
 
 ### 系统调用和库函数
 
-![系统调用与库函数](https://github.com/nilshao/cpp-notebook/raw/master/operation_system/images/chapter1/系统调用与库函数.png)
+![系统调用与库函数](https://github.com/nilshao/notebook_basics/raw/master/operation_system/images/chapter1/系统调用与库函数.png)
 
 当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用。
 

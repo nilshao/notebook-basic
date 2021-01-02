@@ -421,7 +421,7 @@ OSI模型层之间有很多重复功能
 
 典型的数据通信模型：
 
-![典型的数据通信模型](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/典型的数据通信模型.JPG)
+![典型的数据通信模型](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/典型的数据通信模型.JPG)
 
 ### 相关术语：
 
@@ -477,7 +477,7 @@ OSI模型层之间有很多重复功能
 3. 带宽：表示在单位时间内从网络中某一点到另一点所能通过的“最高数据率”，常用来表示网络的通信线路所能传输数据的能力，单位是b/s。
 
 ### 练习题
-![波特练习题](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/波特练习题.JPG)
+![波特练习题](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/波特练习题.JPG)
 
 取对数：16进制码元有 $$\log _{2} 16 = 4$$ 位二进制数 
 
@@ -515,7 +515,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 4. 由于码元的传输速度收到奈氏准则的制约，所以要提高数据的传输速率，就必须设法使**每个码元**能携带更多比特的信息量，
 这就需要用到多元制的调制方法。
 
-![奈氏定理练习](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/奈氏定理练习.PNG)
+![奈氏定理练习](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/奈氏定理练习.PNG)
 
 ### 香农定理
 
@@ -525,7 +525,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 信噪比 = 信号的平均功率/噪声的平均功率，常记为S/N，并用分贝dB作为度量单位、
 公式
 
-![香农定理](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/香农定理.PNG)
+![香农定理](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/香农定理.PNG)
 
 ### 推论
 
@@ -553,7 +553,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 信道：信号的传输媒介。一般用来表示向某一个方向传送信息的介质，因此一条通信线路往往包含一条发送信道和一条接收信道。
 
-![基带信号宽带信号](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/基带信号宽带信号.JPG)
+![基带信号宽带信号](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/基带信号宽带信号.JPG)
 
 数据 -> 数字信号：**编码**
 
@@ -576,13 +576,13 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 6. 4B/5B编码：比特流中插入额外比特以打破一连串的0或1，编码变为80%
 
-![数字数据编码为数字信号](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/数字数据编码为数字信号.JPG)
+![数字数据编码为数字信号](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/数字数据编码为数字信号.JPG)
 
 ### 数字数据调制为模拟信号
 
 发送端将数字信号调制为模拟信号：调制，接收端将模拟信号解调为数字信号：解调
 
-![数字数据调制为模拟信号](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/数字数据调制为模拟信号.PNG)
+![数字数据调制为模拟信号](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/数字数据调制为模拟信号.PNG)
 
 
 习题：某通信链路的波特率是1200Baud，采用4个相位，每个相位有4种振幅的QAM调制技术，则该链路的信息传输速率是多少
@@ -593,7 +593,7 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 一般是数字音频
 
-![模拟数据编码为数字信号](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/模拟数据编码为数字信号.JPG)
+![模拟数据编码为数字信号](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/模拟数据编码为数字信号.JPG)
 
 
 ### 模拟信号调制为模拟信号
@@ -636,12 +636,12 @@ or奈氏准则：在理想低通（无噪声，带宽受限）的条件下，为
 
 光纤主要有纤芯和包层构成,光波通过纤芯有较低的折射率，当光线从高折射率的介质射向低折射率的介质时，其折射角将大于入射角，因此如果入射角足够大，就会出现全反射，即光线碰到包层的时候就会折射回纤芯，光沿着光纤传输，超低损耗、超远传输
 
-![光纤](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/光纤.JPG)
+![光纤](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/光纤.JPG)
 
 
 单模光纤，多模光纤
 
-![单模光纤多模光纤](https://github.com/nilshao/cpp-notebook/raw/master/internet/pictures/chapter02/单模光纤多模光纤.png)
+![单模光纤多模光纤](https://github.com/nilshao/notebook_basics/raw/master/internet/pictures/chapter02/单模光纤多模光纤.png)
 
 单模光纤几乎相当于直线传播，光纤直径减少到波长
 
