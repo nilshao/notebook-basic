@@ -104,6 +104,6 @@ C++：new，delete
 
 ## 双链表
 
-单链表无法找到前驱节点
+单链表无法找到前驱节点把
 
 ![](https://github.com/nilshao/notebook_basics/raw/master/data_structure/chapter02/images/.png)
